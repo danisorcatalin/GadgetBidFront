@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'NeueHaas';
+  src: local('NeueHaas'), url(./fonts/NeueHaasDisplay-Roman.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHaasBold';
+  src: local('NeueHaasBold'), url(./fonts/NeueHaasDisplay-Bold.woff) format('woff');
+}
+
+.ql-snow {
+  font-family: 'NeueHaas' !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: none;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}

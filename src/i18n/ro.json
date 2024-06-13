@@ -1,0 +1,587 @@
+{
+  "companyDocuments": "Company Documents",
+  "login": {
+    "pageTitle": "Login",
+    "title": "Sign in",
+    "login": "Log In",
+    "subtitle": "Sign in on the internal platform",
+    "newAccount": "Create new account",
+    "forgotPassword": "Forgot password",
+    "labels": {
+      "email": "Email Address",
+      "password": "Password"
+    }
+  },
+  "register": {
+    "pageTitle": "Sign up",
+    "subtitle": "Register on the internal platform",
+    "haveAnAccount": "Already have an account?",
+    "labels": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phoneNumber": "Phone number",
+      "password": "Password",
+      "passwordConfirmation": "Password confirmation",
+      "iHaveReadThe": "I have read the ",
+      "terms": "Terms and conditions",
+      "register": "Sign up",
+      "investor": "Investor",
+      "investorDescription": "Want to invest in a company?",
+      "issuer": "Issuer",
+      "issuerDescription": "Want to raise funding?"
+    },
+    "marketingConsent": "I agree to receive information on the campaigns existing on the Platform and the associated marketing materials",
+    "marketingConsentOne": "If you wish to keep you up to date with all the campaigns taking place on our Platform and wish to receive marketing communications from us, please check the box below. We will only process your e-mail address for this purpose. If in the future you do not wish to receive e-mail communications from us, you can withdraw your consent anytime. Please also see the",
+    "marketingConsentTwo": "Privacy Policy",
+    "marketingConsentThree": "before giving your consent:"
+  },
+  "passwordRecovery": {
+    "pageTitle": "Password Recovery",
+    "subtitle": "Tell us your email so we can send you a reset link",
+    "emailSent": "Email with password reset link sent",
+    "btn": "Recover Password",
+    "checkInbox": "Check your inbox",
+    "emailPasswordResetSent": "An email containing a password reset link was sent to your address"
+  },
+  "passwordReset": {
+    "pageTitle": "Password Reset",
+    "subtitle": "Reset your account password using your code",
+    "receiveError": "Did you not receive the code?",
+    "successfulMessage": "Password was succesfully changed",
+    "btn": "Reset Password"
+  },
+  "settings": {
+    "title": "Dashboard: Account | Material Kit Pro",
+    "account": "Account",
+    "dashboard": "Dashboard",
+    "profileUpdated": "Profile Updated",
+    "labels": {
+      "name": "Name",
+      "country": "Country",
+      "state": "State/Region",
+      "city": "City",
+      "address": "Address",
+      "contactEmail": "We will use this email to contact you",
+      "saveChanges": "Save Changes",
+      "passwordUpdated": "Password updated",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "newPasswordConfirmation": "New Password Confirmation"
+    }
+  },
+  "campaign": {
+    "description": "Description",
+    "campaignDocuments": "Campaign documents",
+    "youtubeLink": "Youtube Link",
+    "team": "Team",
+    "youtube": "Youtube",
+    "documents": "Documents",
+    "ongoing": "Ongoing",
+    "upcoming": "Upcoming",
+    "earlyAccess": "Early Access",
+    "ended": "Ended",
+    "risks": "Risks",
+    "patienceIsKey": "Patience is key.",
+    "analysingApp": "We are analysing your application, we'll keep you updated step by step. Thanks!",
+    "emailUs": "You can always email us too,\nas long as you",
+    "wellDone": "Well done!",
+    "analyseCampaign": "Next, our team will analyse\nthe campaign and approve it asap.",
+    "submittedCampaign": "Congrats! You have submitted your first campaign.",
+    "qa": "Q & A",
+    "noCompany": "Please complete your company profile",
+    "yourCampaignDetails": "Your campaign details",
+    "noCampaigns": "There are no campaigns.",
+    "form": {
+      "companyName": "Company Name",
+      "companyCategory": "Category",
+      "companyCategoryValidationRequired": "Category is required",
+      "campaignCurrency": "Currency",
+      "campaignCurrencyRequired": "Currency is required",
+      "shortDescription": "Short description",
+      "shortDescriptionValidation": "A short description for your campaign is required",
+      "youtubeLinkValid": "Youtube Link is not valid",
+      "youtubeLinkRequired": "Youtube Link is required",
+      "amountToRaise": "Minimum Amount",
+      "amountToRaiseRequired": "Minimum amount is required",
+      "amountToRaiseMin": "Minimum amount must be at least 1",
+      "maximumAmountToRaise": "Maximum Amount",
+      "maximumAmountToRaiseRequired": "Maximum amount is required",
+      "maximumAmountToRaiseMin": "Maximum amount to raise must be at least 2",
+      "maximumAmountToRaiseLarger": "Maximum amount to raise must be larger than amount to raise",
+      "equity": "Equity",
+      "equityRequired": "Equity is required",
+      "equityValueMin": "Equity must be at least 1%",
+      "equityValueMax": "Equity must be at most 99%",
+      "equityTypeValidation": "Equity must be number",
+      "valuation": "Valuation",
+      "valuationRequired": "Valuation is required",
+      "valuationTypeValidation": "Valuation must be number",
+      "ticketValue": "Ticket Value",
+      "ticketValueRequired": "Ticket Value is required",
+      "ticketValueMin": "Ticket Value must be at least 1",
+      "ticketValueInfo": "Ticket value represents the minimum amount investment that can be done by a GadgetBid investor.",
+      "started": "Campaign Start Date",
+      "endDate": "Campaign End Date"
+    },
+    "details": {
+      "firstMessage": "I know you are eager to start your first crowdfunding campaign, but please wait for GadgetBid to finish due diligence process!",
+      "secondMessage": "Keep you posted!",
+      "thirdMessage": "Do not hesitate to reach out us for any clarification needed!",
+      "submit": "Submit",
+      "hiGadgetBid": "Hi GadgetBid hero! I know you are eager to start your first crowdfunding campaign, but please fill your company profile and wait for GadgetBid team to finish the due diligence process! Keep you posted! Do no hesitate to reach out us for any clarification needed!"
+    },
+    "table": {
+      "id": "Id",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "company": "Company",
+      "cui": "CUI",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "accountManager": "Account Manager"
+    },
+    "documentsTable": {
+      "tooltip": "Accepts JPG, JPEG, PNG, PDF",
+      "businessPlan": "Business Plan",
+      "executive": "Executive summary",
+      "pitch": "Pitch Deck",
+      "material": "Material Risk Management",
+      "financial": "Financial Statement Projection",
+      "last3years": "Last 3 years Financial Statement",
+      "team": "Team Members pictures",
+      "name": "Name"
+    },
+    "descriptionTab": {
+      "description": "Description",
+      "save": "Save"
+    },
+    "teamForm": {
+      "fullName": "Full name",
+      "role": "Role",
+      "description": "Description",
+      "linkedinProfile": "Linkedin profile"
+    },
+    "statusActionBar": {
+      "currentStatus": "Current status",
+      "accept": "Accept",
+      "reject": "Reject",
+      "unlist": "Unlist",
+      "issuingTokens": "Issuing tokens",
+      "startTokenization": "Start tokenization"
+    },
+    "status": "Status"
+  },
+  "company": {
+    "detailsForm": {
+      "companyName": "Company Name",
+      "companyNameRequired": "Company Name is required",
+      "registrationNumber": "Company Registration Number",
+      "registrationNumberRequired": "Company Registration Number is required",
+      "fiscalIdentificationNumber": "Company Fiscal Identification Number",
+      "fiscalIdentificationNumberRequired": "Company Fiscal Identification Number is required",
+      "euRegistrationNumber": "EU Registration Number",
+      "euRegistrationNumberRequired": "EU Registration Number is required",
+      "website": "Website",
+      "websiteValid": "Website is not valid",
+      "websiteRequired": "Website is required",
+      "bankName": "Bank Name",
+      "bankNameRequired": "Bank Name is required",
+      "iban": "Bank Account Number (IBAN)",
+      "ibanRequired": "Bank Account Number (IBAN) is required",
+      "address": "Address",
+      "addressRequired": "Address is required",
+      "city": "City",
+      "cityRequired": "City is required",
+      "country": "Country",
+      "countryRequired": "Country is required",
+      "legalForm": "Legal Form",
+      "legalFormValidation": "Must be SRL or SA",
+      "legalFormRequired": "Legal Form is required"
+    },
+    "documentsTable": {
+      "name": "Name",
+      "tradeCertificate": "Trade Registry Certificate",
+      "logo": "Logo",
+      "pitchDeck": "Pitch Deck",
+      "businessPlan": "Business Plan",
+      "incorporationDocument": "Incorporation Document",
+      "certificateOfStatus": "Certificate of Status"
+    },
+    "details": {
+      "contactDetails": "Contact Details",
+      "company": "Company",
+      "legalRepresentatives": "Legal representatives",
+      "shareholders": "Shareholders"
+    }
+  },
+  "issuer": {
+    "id": "Id",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "company": "Company",
+    "accountManager": "Account Manager",
+    "email": "Email",
+    "phone": "Phone",
+    "role": "Role",
+    "status": "Status",
+    "onboardingDocuments": "Onboarding documents",
+    "identityCard": "Identity card",
+    "contract": "Contract",
+    "currentStatus": "Current status",
+    "accept": "Accept",
+    "reject": "Reject",
+    "overview": {
+      "welcome": "Welcome!",
+      "steps": "Here are the next steps:",
+      "allGood": "All good.",
+      "stepOne": "Fill in",
+      "stepOneCheck": "Your profile is up to date.",
+      "stepTwo": "Wait to be contacted and for your application to be reviewed.",
+      "stepTwoCheck": "Your application is approved.",
+      "stepThree": "Once accepted, start your",
+      "stepThreeCheck": "And your first campaign is on air.",
+      "profile": "your profile.",
+      "firstCampaign": "first campaign."
+    }
+  },
+  "legalRepresentatives": {
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "address": "Address",
+      "city": "City",
+      "country": "Country",
+      "phone": "Phone",
+      "equity": "Equity"
+    },
+    "fillCompanyDetails": "Fill your company details first"
+  },
+  "investments": {
+    "id": "Id",
+    "company": "Company",
+    "investor": "Investor",
+    "amount": "Amount invested",
+    "date": "Date",
+    "tokens": "Number of tickets",
+    "tokenValue": "Token value (RON)",
+    "createdAt": "Created At",
+    "lastUpdated": "Last update",
+    "status": "Status",
+    "investmentsDocuments": "Documents",
+    "noInvestmentsYet": "No investments yet.",
+    "notYetVerified": "You have made an investment but are not yet verified. To validate the investment, please follow the KYC process here",
+    "verifyMe": "Verify me",
+    "investmentsBreakdown": "Investments Breakdown",
+    "totalInvestments": "Total investments",
+    "Strategy": "Strategy",
+    "Outsourcing": "Outsourcing",
+    "Marketing": "Marketing"
+  },
+  "validations": {
+    "validEmail": "Must be a valid email",
+    "requiredEmail": "Email is required",
+    "requiredPassword": "Password is required",
+    "passwordsMustMatch": "Passwords must match",
+    "requiredFirstName": "First name is required",
+    "requiredLastName": "Last name is required",
+    "requiredName": "Name is required",
+    "requiredPhone": "Phone number is required",
+    "validPhone": "Phone number is not valid",
+    "passwordValidation": "Must contain at least 8 characters, 1 uppercase, 1 lowercase, 1 number and 1 special character",
+    "checkedField": "This field must be checked",
+    "atLeast7Char": "Must be at least 7 characters",
+    "required": "Required",
+    "selectOne": "Select one"
+  },
+  "documents": {
+    "investmentAgreement": "Investment Agreement",
+    "proofOfPayment": "Proof of payment",
+    "SPVAgreement": "SPV agreement",
+    "name": "Name",
+    "scannedIdentityCard": "Scanned Identity Card",
+    "selfie": "Selfie",
+    "contract": "Contract",
+    "bankAccountStatement": "Bank Account Statement"
+  },
+  "inputs": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "personalNumber": "Personal ID Number",
+    "idCardNumber": "ID Card Number",
+    "dateOfBirth": "Birth date",
+    "tokenValue": "Token value",
+    "tokenAmount": "Token amount",
+    "status": "Status",
+    "createdAt": "Created date",
+    "projectTitle": "Project title",
+    "bankName": "Bank Name",
+    "iban": "Bank Account Number (IBAN)"
+  },
+  "managerOverview": {
+    "welcome": "Hello!",
+    "pleaseCheck": "Please, check the ",
+    "investors": "Investors",
+    "issuers": "Issuers",
+    "and": "and",
+    "projects": "Projects",
+    "section": "section in order to see the",
+    "investments": "Investments",
+    "andLatestUpdates": "and latest updates!"
+  },
+  "general": {
+    "update": "Update",
+    "save": "Save",
+    "retry": "Retry",
+    "unlock": "Unlock",
+    "documentTableTooltip": "Accepts JPG, JPEG, PNG, PDF",
+    "pdfTooltip": "PDF document",
+    "jpgTooltip": "Accepts JPG, JPEG, PNG",
+    "status": "Status",
+    "profile": "Profile",
+    "snackbar": {
+      "unableToLogout": "Unable to logout",
+      "errorOccurred": "An error occurred"
+    }
+  },
+  "sidebar": {
+    "myAccount": "My account",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "crowdfunding": {
+    "campaign": {
+      "of": "of",
+      "raised": "raised",
+      "presubscribed": "presubscribed",
+      "logo": "Logo",
+      "investors": "Investors",
+      "daysLeft": "Days left",
+      "location": "Location",
+      "category": "Category",
+      "targetAmountToRaise": "Target amount to raise",
+      "minimumInvestment": "Minimum investment",
+      "equity": "Equity",
+      "valuation": "Valuation",
+      "amountRaised": "Amount raised",
+      "amountPresubscribed": "Amount presubscribed",
+      "investorsNo": "Confirmed investors",
+      "presubscribedInvestors": "Presubscribed investors",
+      "timeRemainingForPresubscription": "Time remaining for presubscription",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "campaignEnded": "Campaign ended",
+      "invest": "Invest",
+      "presubscribe": "Presubscribe",
+      "presubscribeInfo": "By presubscribing you can select a number of tickets to invest in this company and once the crowdfunding campaign is live you will already have an investment",
+      "presubscribeUpdateInfo": "Hello ! You have previously presubscribed to this campaign with the following ticket amount:",
+      "presubscribeUpdateConfirm": "Would you like to update your presubscription ?",
+      "presubscribeSuccessModal": {
+        "congratulations": "Congratulations!",
+        "message": "You have successfully presubscribed to the crowdfunding campaign.",
+        "seeOtherCampaigns": "See other campaigns"
+      }
+    }
+  },
+  "ongoing": {
+    "campaign": {
+      "from": "from",
+      "confirmed": "confirmed",
+      "investorsNo": "confirmed investors",
+      "details": "Details"
+    }
+  },
+  "investment": {
+    "ongoingCampaigns": "Ongoing campaigns",
+    "featured": "Featured",
+    "upcomingCampaigns": "Upcoming Campaigns",
+    "investmentWizard": "Investment wizard",
+    "fundedCampaigns": "Successfully Funded Campaigns",
+    "noCampaignsYet": "No campaigns yet",
+    "details": {
+      "news": "Stay tuned for post investment news!",
+      "investor": "Investor",
+      "numberOfTickets": "Number of tickets",
+      "ticketValue": "Ticket value",
+      "investmentStatus": "Investment status",
+      "investmentDate": "Investment date",
+      "elrondTransaction": "Elrond Transaction",
+      "newsTab": "News",
+      "investmentDetailsTab": "Investments details"
+    },
+    "campaign": {
+      "wasRaised": "was raised"
+    },
+    "finish": {
+      "congratulationsOnYourInvestment": "Congratulations on your investment!",
+      "successfullyVerified": "You have been successfully verified!",
+      "checkEmailInbox": "Check your email inbox. An investor agreement draft was sent to you.",
+      "goToYourInvestments": "Go to your investments",
+      "tryingToVerifyYouProblem": "There was a problem while verifying your documents, please start the process again by clicking the button below:",
+      "tryingToVerifyYou": "Please wait, your documents are still being processed.",
+      "contactSupport": "Contact support",
+      "retryVerification": "Begin verification process"
+    },
+    "save": {
+      "toInvest": "To invest",
+      "investToCampaign": "You had already invested in this campaign",
+      "investToCampaignRisksOne": "Risk awareness\nInvesting in companies on",
+      "investToCampaignRisksTwo": "Homepage - weGadgetBid.com",
+      "investToCampaignRisksThree": "is a great endeavor, and yet not a risk free one.\nCrowd-investing, as well as any other venture undertaking, involves a high degree of risk and may result in partial or total loss of invested capital.\nAll investors should verify any issuer information they consider important before making an investment. We also strongly recommend consulting the Risk Warnings mentioned in the Membership Agreement & Investor Agreement.",
+      "changeYourInvestment": "Would you like to change your investment from",
+      "to": "to",
+      "saveYourInvestment": "Clicking this button will confirm your investment",
+      "confirmYourInvestment": "Confirm your investment"
+    },
+    "wizard": {
+      "patienceIsEverything": "Patience is everything. Please, do not refresh this page. The KYC process may take while.",
+      "selectTickets": "Select Tickets",
+      "confirmInvestment": "Confirm investment",
+      "qa": "Q&A",
+      "kycVerification": "KYC Verification",
+      "finish": "Finish",
+      "back": "Back",
+      "next": "Next"
+    },
+    "kycRedirect": {
+      "redirected": "To complete the KYC process, please click the button below.\nYou will be redirected.",
+      "getVerified": "Get verified"
+    },
+    "selectTickets": {
+      "tickets": "Tickets",
+      "amount": "Amount"
+    }
+  },
+  "investPendingMessage": {
+    "crowdfundingCampaigns": "Currently we do not have any crowdfunding campaigns in which to invest.",
+    "opportunities": "Available opportunities for investments will be listed here.",
+    "makeSomeInvestments": "Once you make some investments you will see their details here."
+  },
+  "investorDigitalWallet": {
+    "QRCode": {
+      "yourWalletID": "Your Wallet ID",
+      "disconnect": "Disconnect",
+      "connectToWallet": "Connect to your Maiar Wallet",
+      "connect": "Connect",
+      "anErrorOccured": "An error occured"
+    }
+  },
+  "investor": {
+    "id": "Id",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "role": "Role",
+    "status": "Status",
+    "onboardingDocuments": "Onboarding documents",
+    "KYCDocuments": "KYC documents",
+    "statusActionBar": {
+      "currentStatus": "Current status",
+      "KYCStatus": "KYC Status"
+    },
+    "generalInformation": "General Information",
+    "wallet": "Wallet",
+    "investments": "Investments"
+  },
+  "generic": {
+    "dynamicForm": {
+      "remove": "Remove",
+      "addMore": "Add More"
+    },
+    "table": {
+      "lastUpdateNewest": "Last update (newest)",
+      "lastUpdateOldest": "Last update (oldest)",
+      "registrationNewest": "Registration (newest)",
+      "registrationOldest": "Registration (oldest)",
+      "openLink": "Open Link",
+      "download": "Download",
+      "upload": "Upload",
+      "view": "View",
+      "discard": "Discard",
+      "delete": "Delete"
+    },
+    "fileDropzone": {
+      "selectFile": "Select file",
+      "dropFile": "Drop file",
+      "s": "s",
+      "browseYourComputer": "or browse your computer",
+      "remove": "Remove",
+      "upload": "Upload"
+    },
+    "pdfReader": {
+      "page": "Page",
+      "of": "of",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "fileUploadModal": {
+      "uploadSuccess": "Upload successful"
+    }
+  },
+  "browseLayout": {
+    "browseComponents": "Browse components",
+    "backToComponents": "Back to components",
+    "browseOverComponents": "Browse through over 100 individual components and over 35 screens"
+  },
+  "pages": {
+    "scanQR": "Open or download an Authenticator App (we recommend Google Authenticator), then scan the QR code and submit the generated code.",
+    "submitCode": "Please submit the code from your authenticator application, it should be marked as",
+    "GadgetBid": "GadgetBid",
+    "authCode": "Please enter the auth code",
+    "code": "Code",
+    "signin": "Sign in",
+    "rescan": "Rescan QR code",
+    "logout": "Log out",
+    "errorAuthorization": "Error: Authorization Required | Material Kit Pro",
+    "authorizationRequired": "401: Authorization required",
+    "mistake": "You either tried some shady route or you came here by mistake. Whichever it is, try using the navigation.",
+    "underDevelopment": "Under development",
+    "backToHome": "Back to Home",
+    "goToLogin": "Go to Login",
+    "serverError": "Error: Server Error | Material Kit Pro",
+    "internalServerError": "500: Internal Server Error",
+    "notFoundError": "Error: Not Found | Material Kit Pro",
+    "pageIsNotHere": "404: The page you are looking for isn’t here",
+    "emailConfirmation": "Email confirmation",
+    "checkInbox": "Check your inbox",
+    "sentEmailConfirmation": "An email confirmation has been sent to your address",
+    "emailConfirmed": "Email confirmed",
+    "verificationFailed": "Verification failed",
+    "waitingForVerification": "Waiting for verification",
+    "emailSuccessfullyVerified": "Email successfully verified",
+    "youCanNowLogIn": "You can now log in",
+    "pleaseTryAgain": "Please try again or contact us"
+  },
+  "newsFeed": {
+    "accept": "Accept",
+    "hide": "Hide",
+    "ago": "ago",
+    "notNewsFeed": "There are no news.",
+    "createMessage": "What's on your mind"
+  },
+  "tooltips": {
+    "powerOfAttorney": " GadgetBid needs this document in case you are not one of the company legal representatives as per Incorporation Document.",
+    "certificateOfStatus": "Document issued by Trade Registry and not older than 3 months."
+  },
+  "investmentStatus": {
+    "PRESUBSCRIBED": "Presubscribed",
+    "NEW": "To be verified",
+    "VERIFIED": "Verified",
+    "NOT_ELIGIBLE": "Not eligible",
+    "AGREEMENT_SENT": "Investment agreement signing",
+    "AGREEMENT_SIGNED": "Investment agreement signed",
+    "SPV_SENT": "SPV signing",
+    "SPV_SIGNED": "SPV signed",
+    "FUNDS_REQUEST": "Payment due",
+    "FUNDS_RECEIVED": "Payment received",
+    "AGEA_SENT": "AGEA signing",
+    "AGEA_SIGNED": "AGEA signed",
+    "TOKENIZATION": "Tokenization",
+    "DONE": "Investment finished"
+  }
+}

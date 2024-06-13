@@ -1,0 +1,36 @@
+import { UserOutputDto } from 'types/user';
+
+export const usersMockData: Partial<UserOutputDto[]> = [
+  {
+    id: 1,
+    firstName: 'Admin',
+    lastName: 'GadgetBid',
+    email: 'admin@gadgetbid.com',
+    tourComplete: false,
+    phone: null,
+    role: 'ADMIN',
+    address: null,
+    country: null,
+    verified: true,
+    active: true,
+    kycCompleted: false,
+    questionsCompleted: false,
+    twoFactorActivated: false,
+  },
+  {
+    id: 2,
+    firstName: 'Account Manager',
+    lastName: 'GadgetBid',
+    tourComplete: false,
+    email: 'manager@gadgetbid.com',
+    phone: null,
+    role: 'ACCOUNT_MANAGER',
+    address: null,
+    country: null,
+    verified: true,
+    active: true,
+    kycCompleted: false,
+    questionsCompleted: false,
+    twoFactorActivated: false,
+  },
+];

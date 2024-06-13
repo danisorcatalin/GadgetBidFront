@@ -1,0 +1,1 @@
+export { InvestmentDetailsTab } from './InvestmentDetailsTab';

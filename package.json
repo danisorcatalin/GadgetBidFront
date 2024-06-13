@@ -1,0 +1,156 @@
+{
+  "name": "@wizhub/gadget-bid",
+  "author": "Gadget Bid",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "start": "react-scripts start",
+    "start:local": "cross-env REACT_APP_ENV=local react-scripts start",
+    "start:staging": "cross-env REACT_APP_ENV=staging react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@material-ui)/\"",
+    "test:ci": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public && mkdir ./build/storybook && cp -R ./storybook-static/* ./build/storybook",
+    "prepare": "husky install",
+    "generate-java-types": "typegen ./src/lib/swagger-java.json > src/lib/GadgetClientJava.ts"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:ci"
+    }
+  },
+  "browserslist": {
+    "production": [
+      "> 0.5%, last 2 versions, Firefox ESR, not dead, not IE 11, maintained node versions"
+    ],
+    "development": [
+      "> 0.5%, last 2 versions, Firefox ESR, not dead, not IE 11, maintained node versions"
+    ]
+  },
+  "resolutions": {
+    "**/@emotion/styled": "^11.0.0"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.4.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/lab": "^5.0.0-alpha.51",
+    "@mui/material": "^5.0.4",
+    "@mui/styles": "^5.0.1",
+    "@mui/system": "^5.0.4",
+    "@reduxjs/toolkit": "^1.5.0",
+    "@sentry/react": "^6.14.1",
+    "@sentry/tracing": "^6.14.1",
+    "@types/dropzone": "^5.7.4",
+    "@walletconnect/client": "^1.5.2",
+    "@walletconnect/qrcode-modal": "^1.5.2",
+    "apexcharts": "^3.27.2",
+    "axios": "^0.23.0",
+    "canvas-confetti": "^1.4.0",
+    "customize-cra": "^1.0.0",
+    "date-fns": "^2.16.1",
+    "date-fns-tz": "^1.1.6",
+    "formik": "^2.2.6",
+    "history": "^5.0.0",
+    "i18next": "^19.8.7",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.3.0",
+    "jszip": "^3.6.0",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.20",
+    "mui-modal-provider": "^1.5.1",
+    "notistack": "^2.0.2",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
+    "openapi-client-axios": "^4.1.0",
+    "prop-types": "^15.7.2",
+    "quill-image-drop-module": "^1.0.3",
+    "quill-image-resize-module-react": "^3.0.0",
+    "react": "^17.0.1",
+    "react-apexcharts": "^1.3.9",
+    "react-dom": "^17.0.1",
+    "react-dropzone": "^11.3.4",
+    "react-error-boundary": "^3.1.3",
+    "react-fast-compare": "^2.0.4",
+    "react-helmet-async": "^1.0.7",
+    "react-i18next": "^11.8.5",
+    "react-image-file-resizer": "^0.4.7",
+    "react-pdf": "^5.3.2",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-player": "^2.9.0",
+    "react-quill": "^1.3.5",
+    "react-redux": "^7.2.2",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "string-to-color": "^2.2.2",
+    "stylis": "^4.0.6",
+    "stylis-plugin-rtl": "^2.0.1",
+    "swr": "^1.0.1",
+    "use-debounce": "^7.0.1",
+    "web-vitals": "^1.1.0",
+    "yup": "^0.32.8",
+    "zustand": "^3.5.8"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/node-logger": "^6.3.4",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.4",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/user-event": "^13.0.1",
+    "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.167",
+    "@types/node": "^16.10.2",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.30",
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-draft-wysiwyg": "^1.13.1",
+    "@types/react-redux": "^7.1.15",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/yup": "^0.29.11",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-jest": "^26.6.3",
+    "cross-env": "^7.0.3",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "husky": "^7.0.1",
+    "jest": "^26.6.0",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.4.4"
+  }
+}
