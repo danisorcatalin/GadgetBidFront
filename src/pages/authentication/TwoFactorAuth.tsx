@@ -164,7 +164,6 @@ const TwoFactorAuth: FC = () => {
                       <GadgetInput
                         autoFocus
                         error={Boolean(touched.authCode && errors.authCode)}
-                        fullWidth
                         helperText={touched.authCode && errors.authCode}
                         label={t('pages.code')}
                         name="authCode"

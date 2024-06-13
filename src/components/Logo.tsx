@@ -11,7 +11,6 @@ interface LogoProps {
 const LogoRoot = experimentalStyled('svg')({});
 
 const Logo: FC<LogoProps> = (props) => {
-  const { white } = props;
   return (
     <LogoRoot version="1.1" xmlSpace="preserve" width="640" height="640" viewBox="0 0 1500 750" {...props}>
         <path d="M0 0 C211.2 0 422.4 0 640 0 C640 211.2 640 422.4 640 640 C428.8 640 217.6 640 0 640 C0 428.8 0 217.6 0 0 Z " fill="#FEFEFE" transform="translate(0,0)"/>

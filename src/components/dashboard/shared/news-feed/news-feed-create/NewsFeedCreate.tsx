@@ -59,7 +59,6 @@ export const NewsFeedCreate = (props: NewsFeedCreateProps): JSX.Element => {
         }}
       >
         <GadgetInput
-          fullWidth
           onChange={handleChange}
           placeholder={`${t('newsFeed.createMessage')}, ${user.firstName} ${user.lastName}`}
           value={message}

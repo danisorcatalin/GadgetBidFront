@@ -66,7 +66,6 @@ const LoginJWT: FC = (props) => {
         <form noValidate onSubmit={handleSubmit} {...props}>
           <GadgetInput
             error={Boolean(touched.email && errors.email)}
-            fullWidth={true}
             helperText={touched.email && errors.email}
             label={t('login.labels.email')}
             name="email"
@@ -78,7 +77,6 @@ const LoginJWT: FC = (props) => {
           <Spacer marginTop="30px" />
           <GadgetInput
             error={Boolean(touched.password && errors.password)}
-            fullWidth={true}
             helperText={touched.password && errors.password}
             label={t('login.labels.password')}
             name="password"

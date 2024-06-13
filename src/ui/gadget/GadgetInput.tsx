@@ -11,7 +11,6 @@ interface GadgetInputProps {
   type?: string;
   error?: boolean;
   helperText?: string;
-  fullWidth?: boolean;
   placeholder?: string;
   value?: string | number;
   autoFocus?: boolean;

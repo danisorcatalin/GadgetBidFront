@@ -97,7 +97,6 @@ const AccountSecuritySettings: FC = (props) => {
                   <Grid item md={4} sm={6} xs={12}>
                     <GadgetInput
                       error={Boolean(touched.currentPassword && errors.currentPassword)}
-                      fullWidth
                       helperText={touched.currentPassword && errors.currentPassword}
                       label={t('settings.labels.currentPassword')}
                       name="currentPassword"
@@ -111,7 +110,6 @@ const AccountSecuritySettings: FC = (props) => {
                   <Grid item md={4} sm={6} xs={12}>
                     <GadgetInput
                       error={Boolean(touched.newPassword && errors.newPassword)}
-                      fullWidth
                       helperText={touched.newPassword && errors.newPassword}
                       label={t('settings.labels.newPassword')}
                       name="newPassword"
@@ -127,7 +125,6 @@ const AccountSecuritySettings: FC = (props) => {
                       error={Boolean(
                         touched.newPasswordConfirmation && errors.newPasswordConfirmation
                       )}
-                      fullWidth
                       helperText={touched.newPasswordConfirmation && errors.newPasswordConfirmation}
                       label={t('settings.labels.newPasswordConfirmation')}
                       name="newPasswordConfirmation"
@@ -231,7 +228,6 @@ const AccountSecuritySettings: FC = (props) => {
                         helperText={touched.authCode && errors.authCode}
                         label={t('pages.code')}
                         name="authCode"
-                        fullWidth={false}
                         onBlur={handleBlur}
                         onChange={handleChange}
                         value={values.authCode}

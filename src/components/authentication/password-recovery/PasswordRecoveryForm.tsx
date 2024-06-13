@@ -69,7 +69,6 @@ const PasswordRecoveryForm: FC = () => {
         <form noValidate onSubmit={handleSubmit}>
           <GadgetInput
             error={Boolean(touched.email && errors.email)}
-            fullWidth={true}
             helperText={touched.email && errors.email}
             label={t('register.labels.email')}
             name="email"

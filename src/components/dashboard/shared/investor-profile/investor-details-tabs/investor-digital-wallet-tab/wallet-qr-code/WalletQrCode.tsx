@@ -102,7 +102,7 @@ export const WalletQrCode: FC<WalletQrCodeProps> = (props: WalletQrCodeProps): J
           <Typography variant="h5" color="textPrimary">
             {t('investorDigitalWallet.QRCode.yourWalletID')}
           </Typography>
-          <GadgetInput fullWidth={true} value={walletId} style={{ marginTop: '20px' }} />
+          <GadgetInput value={walletId} style={{ marginTop: '20px' }} />
           <Button
             color="primary"
             size="large"

@@ -91,7 +91,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.firstName && errors.firstName)}
-                        fullWidth
                         helperText={touched.firstName && errors.firstName}
                         label={t('register.labels.firstName')}
                         name="firstName"
@@ -105,7 +104,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.lastName && errors.lastName)}
-                        fullWidth
                         helperText={touched.lastName && errors.lastName}
                         label={t('register.labels.lastName')}
                         name="lastName"
@@ -119,7 +117,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.email && errors.email)}
-                        fullWidth
                         helperText={
                           touched.email && errors.email
                             ? errors.email
@@ -138,7 +135,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.phone && errors.phone)}
-                        fullWidth
                         helperText={touched.phone && errors.phone}
                         label={t('register.labels.phoneNumber')}
                         name="phone"
@@ -151,7 +147,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.country && errors.country)}
-                        fullWidth
                         helperText={touched.country && errors.country}
                         label={t('settings.labels.country')}
                         name="country"
@@ -165,7 +160,6 @@ const AccountGeneralSettings: FC = (props) => {
                     <Grid item md={6} xs={12}>
                       <GadgetInput
                         error={Boolean(touched.address && errors.address)}
-                        fullWidth
                         helperText={touched.address && errors.address}
                         label={t('settings.labels.address')}
                         name="address"

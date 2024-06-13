@@ -181,7 +181,6 @@ const RegisterJWT: FC = (props) => {
             <Grid sx={{ mb: 1.5 }} item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.firstName && errors.firstName)}
-                fullWidth={true}
                 helperText={touched.firstName && errors.firstName}
                 label={t('register.labels.firstName')}
                 name="firstName"
@@ -193,7 +192,6 @@ const RegisterJWT: FC = (props) => {
             <Grid item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.lastName && errors.lastName)}
-                fullWidth
                 helperText={touched.lastName && errors.lastName}
                 label={t('register.labels.lastName')}
                 name="lastName"
@@ -205,7 +203,6 @@ const RegisterJWT: FC = (props) => {
             <Grid sx={{ mb: 1.5 }} item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.email && errors.email)}
-                fullWidth
                 helperText={touched.email && errors.email}
                 label={t('register.labels.email')}
                 name="email"
@@ -218,7 +215,6 @@ const RegisterJWT: FC = (props) => {
             <Grid item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.phone && errors.phone)}
-                fullWidth
                 helperText={touched.phone && errors.phone}
                 label={t('register.labels.phoneNumber')}
                 name="phone"
@@ -231,7 +227,6 @@ const RegisterJWT: FC = (props) => {
             <Grid item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.password && errors.password)}
-                fullWidth
                 helperText={touched.password && errors.password}
                 label={t('register.labels.password')}
                 name="password"
@@ -244,7 +239,6 @@ const RegisterJWT: FC = (props) => {
             <Grid item xs={12} sm={6}>
               <GadgetInput
                 error={Boolean(touched.passwordConfirmation && errors.passwordConfirmation)}
-                fullWidth
                 helperText={touched.passwordConfirmation && errors.passwordConfirmation}
                 label={t('register.labels.passwordConfirmation')}
                 name="passwordConfirmation"
