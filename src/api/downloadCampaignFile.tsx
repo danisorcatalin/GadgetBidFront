@@ -2,7 +2,7 @@ import { GadgetClientJava } from '../lib/axios';
 
 export const downloadCampaignFile = async (id: number, fileId: number): Promise<unknown> => {
   try {
-    const client = await GadgetClientJava.getClient();
+    const client = GadgetClientJava.getClient();
     const response = await client.campaignControllerDownloadCampaignFile({ id, fileId }, null, {
       responseType: 'arraybuffer',
     });

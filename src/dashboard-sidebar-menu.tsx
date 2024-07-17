@@ -4,7 +4,6 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import PersonIcon from '@mui/icons-material/Person';
 import BusinessIcon from '@mui/icons-material/Business';
 import LaunchIcon from '@mui/icons-material/Launch';
 import FeedIcon from '@mui/icons-material/Feed';
@@ -74,49 +73,25 @@ const sections: Section[] = [
   },
   {
     title: 'Crowdfunding',
-    visibility: ['ISSUER'],
+    visibility: ['USER'],
     items: [
       {
         title: 'Company profile',
-        path: '/dashboard/company-profile',
+        path: '/    dashboard/company-profile',
         icon: <BusinessIcon fontSize="small" />,
-        visibility: ['ISSUER'],
+        visibility: ['USER'],
       },
       {
         title: 'Start a campaign',
         path: '/dashboard/crowdfunding-campaign',
         icon: <LaunchIcon fontSize="small" />,
-        visibility: ['ISSUER'],
+        visibility: ['USER'],
       },
       {
         title: 'News Feed',
         path: '/dashboard/news-feed',
         icon: <FeedIcon fontSize="small" />,
-        visibility: ['ISSUER'],
-      },
-    ],
-  },
-  {
-    title: 'Investing',
-    visibility: ['INVESTOR'],
-    items: [
-      {
-        title: 'My profile',
-        path: '/dashboard/investor-profile',
-        icon: <PersonIcon fontSize="small" />,
-        visibility: ['INVESTOR'],
-      },
-      {
-        title: 'My investments',
-        path: '/dashboard/investor-investments',
-        icon: <TrendingUpIcon fontSize="small" />,
-        visibility: ['INVESTOR'],
-      },
-      {
-        title: 'News Feed',
-        path: '/dashboard/news-feed',
-        icon: <FeedIcon fontSize="small" />,
-        visibility: ['INVESTOR'],
+        visibility: ['USER'],
       },
     ],
   },

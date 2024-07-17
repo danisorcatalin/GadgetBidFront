@@ -61,7 +61,7 @@ const EmailVerificationPage: FC = () => {
             justifyContent: 'flex-start',
           }}
         >
-          <RouterLink to="/">
+          <RouterLink to="dashboard">
             <Logo
               sx={{
                 height: 50,

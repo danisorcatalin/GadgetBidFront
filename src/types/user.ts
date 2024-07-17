@@ -3,13 +3,7 @@ import { Components } from '../lib/GadgetClientJava';
 export enum UserRoleEnum {
   ADMIN = 'ADMIN',
   ACCOUNT_MANAGER = 'ACCOUNT_MANAGER',
-  ISSUER = 'ISSUER',
-  INVESTOR = 'INVESTOR',
-}
-
-export enum RegisterUserRoleEnum {
-  ISSUER = 'ISSUER',
-  INVESTOR = 'INVESTOR',
+  USER = 'USER',
 }
 
 // export enum InvestorOnboardStatusEnum {
@@ -91,7 +85,7 @@ export type UserQuestionDto = Components.Schemas.UserQuestionDto;
 export type UserAnswerInputDto = Components.Schemas.UserAnswerInputDto;
 export type UserAnswerInputArrayDto = Components.Schemas.UserAnswerInputArrayDto;
 export type UserRole = Components.Schemas.UserRole;
-export type RegisteredUserRole = Extract<UserRole, 'ISSUER' | 'INVESTOR'>;
+export type RegisteredUserRole = Extract<UserRole, 'USER'>;
 export type UserOnboardStatus = UserOnboard['status'];
 
 export type UserKycDto = Components.Schemas.UserKycDto;

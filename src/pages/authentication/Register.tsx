@@ -24,6 +24,7 @@ const Register: FC = () => {
     gtm.push({ event: GTM_EVENTS.HAVING_AN_ACCOUNT_CLICK });
   };
 
+  // @ts-ignore
   return (
     <>
       <Helmet>
@@ -32,14 +33,14 @@ const Register: FC = () => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
         }}
       >
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
-              height: 50,
-              width: 100,
+              height: 150,
+              width: 200,
             }}
           />
         </RouterLink>
@@ -52,7 +53,7 @@ const Register: FC = () => {
               display: 'flex',
               flexDirection: 'column',
               p: 0,
-              backgroundColor: '#EBF0FF',
+              backgroundColor: '#F4F6FF',
             }}
           >
             <Box

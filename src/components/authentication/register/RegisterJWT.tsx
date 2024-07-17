@@ -14,7 +14,6 @@ import {
 } from '@mui/material';
 import useAuth from '../../../hooks/useAuth';
 import useIsMountedRef from '../../../hooks/useIsMountedRef';
-import DetailedRadioGroup, { IDetailedRadio } from '../../DetailedRadioGroup';
 import { useTranslation } from 'react-i18next';
 import { useModal } from 'mui-modal-provider';
 import TermsModal from 'pages/gdpr/TermsModal';
@@ -22,7 +21,6 @@ import { TermsAndConditions } from 'pages/gdpr/TermsAndConditions';
 import { PrivacyPolicy } from 'pages/gdpr/PrivacyPolicy';
 
 import { AuthContextValue } from 'contexts/JWTContext';
-import { RegisteredUserRole } from 'types/user';
 import gtm from '../../../lib/gtm';
 import { GTM_EVENTS } from '../../../constants';
 import { MembershipAgreement } from 'pages/gdpr/MembershipAgreement';
@@ -41,18 +39,6 @@ const RegisterJWT: FC = (props) => {
   const { showModal } = useModal();
   const theme = useTheme();
   const mobileDevice = useMediaQuery(theme.breakpoints.down('sm'));
-  const userRoles: IDetailedRadio[] = [
-    {
-      value: 'INVESTOR',
-      title: t('register.labels.investor'),
-      description: t('register.labels.investorDescription'),
-    },
-    {
-      value: 'ISSUER',
-      title: t('register.labels.issuer'),
-      description: t('register.labels.issuerDescription'),
-    },
-  ];
 
   const showTermsAndConditions = (
     type: TermsType,
@@ -103,7 +89,6 @@ const RegisterJWT: FC = (props) => {
         phone: '',
         password: '',
         passwordConfirmation: '',
-        role: '' as RegisteredUserRole,
         termsAndCondition: false,
         privacyPolicy: false,
         membershipAgreement: false,
@@ -111,7 +96,6 @@ const RegisterJWT: FC = (props) => {
         submit: null,
       }}
       validationSchema={Yup.object().shape({
-        role: Yup.mixed().oneOf(['INVESTOR', 'ISSUER']).required(t('validations.selectOne')),
         email: Yup.string()
           .email(t('validations.validEmail'))
           .max(255)
@@ -120,7 +104,7 @@ const RegisterJWT: FC = (props) => {
         lastName: Yup.string().max(255).required(t('validations.requiredLastName')),
         phone: Yup.string()
           .matches(
-            /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
+            /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/,
             t('validations.validPhone')
           )
           .required(t('validations.requiredPhone')),
@@ -167,16 +151,6 @@ const RegisterJWT: FC = (props) => {
         setFieldValue,
       }): JSX.Element => (
         <form noValidate onSubmit={handleSubmit} {...props}>
-          <DetailedRadioGroup
-            mobileDevice={mobileDevice}
-            radios={userRoles}
-            name="role"
-            error={Boolean(touched.role && errors.role)}
-            errorText={touched.role && errors.role}
-            fullWidth={true}
-            onBlur={handleBlur}
-            onChange={handleChange}
-          />
           <Grid container spacing={2}>
             <Grid sx={{ mb: 1.5 }} item xs={12} sm={6}>
               <GadgetInput
@@ -385,7 +359,7 @@ const RegisterJWT: FC = (props) => {
           )}
           {errors.submit && (
             <Box sx={{ mt: 3 }}>
-              <FormHelperText error>{errors.submit}</FormHelperText>
+              <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
             </Box>
           )}
           <Box sx={{ mt: 4 }}>

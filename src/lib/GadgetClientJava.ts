@@ -4,7 +4,7 @@ import type {
   UnknownParamsObject,
   OperationResponse,
   AxiosRequestConfig,
-} from 'openapi-client-axios'; 
+} from 'openapi-client-axios';
 
 export declare namespace Components {
     namespace Schemas {
@@ -712,7 +712,7 @@ export declare namespace Components {
             order?: number; // int32
             active?: boolean;
         }
-        export type UserRole = "ADMIN" | "ACCOUNT_MANAGER" | "AUDITOR" | "ISSUER" | "INVESTOR" | "USER";
+        export type UserRole = "ADMIN" | "ACCOUNT_MANAGER" | "AUDITOR" | "USER";
         export interface UserUpdateDto {
             firstName: string;
             lastName: string;
@@ -2448,7 +2448,7 @@ export interface OperationMethods {
   'userControllerGetUser'(
     parameters?: Parameters<Paths.UserControllerGetUser.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUser.Responses.$200>
   /**
    * userControllerUpdateUser - Update user
@@ -2456,7 +2456,7 @@ export interface OperationMethods {
   'userControllerUpdateUser'(
     parameters?: Parameters<Paths.UserControllerUpdateUser.PathParameters> | null,
     data?: Paths.UserControllerUpdateUser.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUpdateUser.Responses.$200>
   /**
    * userControllerUpdateUserWallet - Update user wallet
@@ -2464,7 +2464,7 @@ export interface OperationMethods {
   'userControllerUpdateUserWallet'(
     parameters?: Parameters<Paths.UserControllerUpdateUserWallet.PathParameters> | null,
     data?: Paths.UserControllerUpdateUserWallet.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUpdateUserWallet.Responses.$200>
   /**
    * userControllerUpdateUserQuestion - Update question
@@ -2472,7 +2472,7 @@ export interface OperationMethods {
   'userControllerUpdateUserQuestion'(
     parameters?: Parameters<Paths.UserControllerUpdateUserQuestion.PathParameters> | null,
     data?: Paths.UserControllerUpdateUserQuestion.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUpdateUserQuestion.Responses.$200>
   /**
    * userControllerDeleteUserQuestion - Delete question
@@ -2480,7 +2480,7 @@ export interface OperationMethods {
   'userControllerDeleteUserQuestion'(
     parameters?: Parameters<Paths.UserControllerDeleteUserQuestion.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerDeleteUserQuestion.Responses.$200>
   /**
    * userControllerGetUserOnboard - Get onboard details
@@ -2488,7 +2488,7 @@ export interface OperationMethods {
   'userControllerGetUserOnboard'(
     parameters?: Parameters<Paths.UserControllerGetUserOnboard.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserOnboard.Responses.$200>
   /**
    * userControllerUpdateUserOnboard - Update user onboard request
@@ -2496,7 +2496,7 @@ export interface OperationMethods {
   'userControllerUpdateUserOnboard'(
     parameters?: Parameters<Paths.UserControllerUpdateUserOnboard.PathParameters> | null,
     data?: Paths.UserControllerUpdateUserOnboard.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUpdateUserOnboard.Responses.$200>
   /**
    * newsFeedControllerGetNewsFeedById - Get news feed post details
@@ -2504,7 +2504,7 @@ export interface OperationMethods {
   'newsFeedControllerGetNewsFeedById'(
     parameters?: Parameters<Paths.NewsFeedControllerGetNewsFeedById.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerGetNewsFeedById.Responses.$200>
   /**
    * newsFeedControllerUpdateNewsFeed - Update news feed post details
@@ -2512,7 +2512,7 @@ export interface OperationMethods {
   'newsFeedControllerUpdateNewsFeed'(
     parameters?: Parameters<Paths.NewsFeedControllerUpdateNewsFeed.PathParameters> | null,
     data?: Paths.NewsFeedControllerUpdateNewsFeed.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerUpdateNewsFeed.Responses.$200>
   /**
    * newsFeedControllerUpdatePostVisibility - Update news feed post visibility
@@ -2520,7 +2520,7 @@ export interface OperationMethods {
   'newsFeedControllerUpdatePostVisibility'(
     parameters?: Parameters<Paths.NewsFeedControllerUpdatePostVisibility.PathParameters> | null,
     data?: Paths.NewsFeedControllerUpdatePostVisibility.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerUpdatePostVisibility.Responses.$200>
   /**
    * newsFeedControllerDeletePost - Delete news feed post
@@ -2528,7 +2528,7 @@ export interface OperationMethods {
   'newsFeedControllerDeletePost'(
     parameters?: Parameters<Paths.NewsFeedControllerDeletePost.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerDeletePost.Responses.$200>
   /**
    * investmentControllerGetInvestment - Get investment request
@@ -2536,7 +2536,7 @@ export interface OperationMethods {
   'investmentControllerGetInvestment'(
     parameters?: Parameters<Paths.InvestmentControllerGetInvestment.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerGetInvestment.Responses.$200>
   /**
    * investmentControllerUpdateInvestment - Update investment request
@@ -2544,7 +2544,7 @@ export interface OperationMethods {
   'investmentControllerUpdateInvestment'(
     parameters?: Parameters<Paths.InvestmentControllerUpdateInvestment.PathParameters> | null,
     data?: Paths.InvestmentControllerUpdateInvestment.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerUpdateInvestment.Responses.$200>
   /**
    * feedbackControllerUpdateFeedback - Update feedback form
@@ -2552,7 +2552,7 @@ export interface OperationMethods {
   'feedbackControllerUpdateFeedback'(
     parameters?: Parameters<Paths.FeedbackControllerUpdateFeedback.PathParameters> | null,
     data?: Paths.FeedbackControllerUpdateFeedback.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerUpdateFeedback.Responses.$200>
   /**
    * companyControllerGetCompanyById - Get company details
@@ -2560,7 +2560,7 @@ export interface OperationMethods {
   'companyControllerGetCompanyById'(
     parameters?: Parameters<Paths.CompanyControllerGetCompanyById.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerGetCompanyById.Responses.$200>
   /**
    * companyControllerUpdateCompany - Update company details
@@ -2568,7 +2568,7 @@ export interface OperationMethods {
   'companyControllerUpdateCompany'(
     parameters?: Parameters<Paths.CompanyControllerUpdateCompany.PathParameters> | null,
     data?: Paths.CompanyControllerUpdateCompany.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerUpdateCompany.Responses.$200>
   /**
    * companyControllerUpdateCompanyMember - Update company member
@@ -2576,7 +2576,7 @@ export interface OperationMethods {
   'companyControllerUpdateCompanyMember'(
     parameters?: Parameters<Paths.CompanyControllerUpdateCompanyMember.PathParameters> | null,
     data?: Paths.CompanyControllerUpdateCompanyMember.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerUpdateCompanyMember.Responses.$200>
   /**
    * companyControllerDeleteCompanyMember - Delete company member
@@ -2584,7 +2584,7 @@ export interface OperationMethods {
   'companyControllerDeleteCompanyMember'(
     parameters?: Parameters<Paths.CompanyControllerDeleteCompanyMember.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerDeleteCompanyMember.Responses.$200>
   /**
    * campaignControllerGetCampaign - Get campaign details
@@ -2592,7 +2592,7 @@ export interface OperationMethods {
   'campaignControllerGetCampaign'(
     parameters?: Parameters<Paths.CampaignControllerGetCampaign.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetCampaign.Responses.$200>
   /**
    * campaignControllerUpdateCampaign - Update campaign details
@@ -2600,7 +2600,7 @@ export interface OperationMethods {
   'campaignControllerUpdateCampaign'(
     parameters?: Parameters<Paths.CampaignControllerUpdateCampaign.PathParameters> | null,
     data?: Paths.CampaignControllerUpdateCampaign.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerUpdateCampaign.Responses.$200>
   /**
    * campaignControllerUpdateCampaignMember - Update campaign member
@@ -2608,7 +2608,7 @@ export interface OperationMethods {
   'campaignControllerUpdateCampaignMember'(
     parameters?: Parameters<Paths.CampaignControllerUpdateCampaignMember.PathParameters & Paths.CampaignControllerUpdateCampaignMember.QueryParameters> | null,
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerUpdateCampaignMember.Responses.$200>
   /**
    * campaignControllerDeleteCampaignMember - Delete campaign member
@@ -2616,7 +2616,7 @@ export interface OperationMethods {
   'campaignControllerDeleteCampaignMember'(
     parameters?: Parameters<Paths.CampaignControllerDeleteCampaignMember.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerDeleteCampaignMember.Responses.$200>
   /**
    * userControllerCreateUser - Create user
@@ -2624,7 +2624,7 @@ export interface OperationMethods {
   'userControllerCreateUser'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.UserControllerCreateUser.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerCreateUser.Responses.$200>
   /**
    * userControllerStartKyc - KYC verification
@@ -2632,7 +2632,7 @@ export interface OperationMethods {
   'userControllerStartKyc'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerStartKyc.Responses.$200>
   /**
    * userControllerEventKyc - KYC response
@@ -2640,7 +2640,7 @@ export interface OperationMethods {
   'userControllerEventKyc'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.UserControllerEventKyc.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerEventKyc.Responses.$200>
   /**
    * userControllerUpdatePassword - Update user password
@@ -2648,7 +2648,7 @@ export interface OperationMethods {
   'userControllerUpdatePassword'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.UserControllerUpdatePassword.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUpdatePassword.Responses.$200>
   /**
    * userControllerAddUserQuestion - Add new question
@@ -2656,7 +2656,7 @@ export interface OperationMethods {
   'userControllerAddUserQuestion'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.UserControllerAddUserQuestion.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerAddUserQuestion.Responses.$200>
   /**
    * userControllerAddUserOnboardDocument - Upload documents for specific onboard ID
@@ -2664,7 +2664,7 @@ export interface OperationMethods {
   'userControllerAddUserOnboardDocument'(
     parameters?: Parameters<Paths.UserControllerAddUserOnboardDocument.PathParameters> | null,
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerAddUserOnboardDocument.Responses.$200>
   /**
    * userControllerAddUserAnswers - Add answers
@@ -2672,7 +2672,7 @@ export interface OperationMethods {
   'userControllerAddUserAnswers'(
     parameters?: Parameters<Paths.UserControllerAddUserAnswers.PathParameters> | null,
     data?: Paths.UserControllerAddUserAnswers.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerAddUserAnswers.Responses.$200>
   /**
    * newsFeedControllerCreatePost - Create news feed post
@@ -2680,7 +2680,7 @@ export interface OperationMethods {
   'newsFeedControllerCreatePost'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.NewsFeedControllerCreatePost.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerCreatePost.Responses.$200>
   /**
    * newsFeedControllerAddNewsFeedFile - Upload file for news feed
@@ -2688,7 +2688,7 @@ export interface OperationMethods {
   'newsFeedControllerAddNewsFeedFile'(
     parameters?: { id: number; type: Components.Schemas.NewsFeedFileType },
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerAddNewsFeedFile.Responses.$200>
   /**
    * investmentControllerCreateInvestment - Create investment request
@@ -2696,7 +2696,7 @@ export interface OperationMethods {
   'investmentControllerCreateInvestment'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.InvestmentControllerCreateInvestment.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerCreateInvestment.Responses.$200>
   /**
    * investmentControllerAddInvestmentFile - Upload file for investment request
@@ -2704,7 +2704,7 @@ export interface OperationMethods {
   'investmentControllerAddInvestmentFile'(
     parameters?: { id: number; type: Components.Schemas.InvestmentFileType },
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerAddInvestmentFile.Responses.$200>
   /**
    * investmentControllerCreatePresubscription - Create presubscription
@@ -2712,7 +2712,7 @@ export interface OperationMethods {
   'investmentControllerCreatePresubscription'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.InvestmentControllerCreatePresubscription.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerCreatePresubscription.Responses.$200>
   /**
    * feedbackControllerGetFeedbackForms - Get feedback forms
@@ -2720,7 +2720,7 @@ export interface OperationMethods {
   'feedbackControllerGetFeedbackForms'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerGetFeedbackForms.Responses.$200>
   /**
    * feedbackControllerAddFeedback - Add feedback form
@@ -2728,7 +2728,7 @@ export interface OperationMethods {
   'feedbackControllerAddFeedback'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.FeedbackControllerAddFeedback.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerAddFeedback.Responses.$200>
   /**
    * feedbackControllerAnswerFeedback - Answer for feedback form by name
@@ -2736,7 +2736,7 @@ export interface OperationMethods {
   'feedbackControllerAnswerFeedback'(
     parameters?: Parameters<Paths.FeedbackControllerAnswerFeedback.PathParameters> | null,
     data?: Paths.FeedbackControllerAnswerFeedback.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerAnswerFeedback.Responses.$200>
   /**
    * companyControllerCreateCompany - Create a new company
@@ -2744,7 +2744,7 @@ export interface OperationMethods {
   'companyControllerCreateCompany'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.CompanyControllerCreateCompany.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerCreateCompany.Responses.$200>
   /**
    * companyControllerCreateCompanyMember - Add company member
@@ -2752,7 +2752,7 @@ export interface OperationMethods {
   'companyControllerCreateCompanyMember'(
     parameters?: Parameters<Paths.CompanyControllerCreateCompanyMember.PathParameters> | null,
     data?: Paths.CompanyControllerCreateCompanyMember.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerCreateCompanyMember.Responses.$200>
   /**
    * companyControllerUploadCompanyFile - Upload company file
@@ -2760,7 +2760,7 @@ export interface OperationMethods {
   'companyControllerUploadCompanyFile'(
     parameters?: { documentType: Components.Schemas.CompanyFileType; id: number },
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerUploadCompanyFile.Responses.$200>
   /**
    * campaignControllerCreateCampaign - Create a new campaign
@@ -2768,7 +2768,7 @@ export interface OperationMethods {
   'campaignControllerCreateCampaign'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.CampaignControllerCreateCampaign.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerCreateCampaign.Responses.$200>
   /**
    * campaignControllerCreateCampaignMember - Add campaign member
@@ -2776,7 +2776,7 @@ export interface OperationMethods {
   'campaignControllerCreateCampaignMember'(
     parameters?: { id: number },
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerCreateCampaignMember.Responses.$200>
   /**
    * campaignControllerIssueCampaignTokens - Issue campaign tokens
@@ -2784,7 +2784,7 @@ export interface OperationMethods {
   'campaignControllerIssueCampaignTokens'(
     parameters?: Parameters<Paths.CampaignControllerIssueCampaignTokens.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerIssueCampaignTokens.Responses.$200>
   /**
    * campaignControllerUploadCampaignFile - Upload campaign file
@@ -2792,7 +2792,7 @@ export interface OperationMethods {
   'campaignControllerUploadCampaignFile'(
     parameters?: Parameters<Paths.CampaignControllerUploadCampaignFile.PathParameters> | null,
     data?: FormData,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerUploadCampaignFile.Responses.$200>
   /**
    * authControllerUpdatePassword - Request to update password with reset password token
@@ -2800,7 +2800,7 @@ export interface OperationMethods {
   'authControllerUpdatePassword'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.AuthControllerUpdatePassword.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerUpdatePassword.Responses.$200>
   /**
    * authControllerResetPassword - Request to reset password
@@ -2808,7 +2808,7 @@ export interface OperationMethods {
   'authControllerResetPassword'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.AuthControllerResetPassword.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerResetPassword.Responses.$200>
   /**
    * authControllerRegister - Register endpoint
@@ -2816,7 +2816,7 @@ export interface OperationMethods {
   'authControllerRegister'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.AuthControllerRegister.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerRegister.Responses.$200>
   /**
    * authControllerLogin - Login endpoint
@@ -2824,7 +2824,7 @@ export interface OperationMethods {
   'authControllerLogin'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.AuthControllerLogin.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerLogin.Responses.$200>
   /**
    * twoFactorAuthenticationControllerAuthenticate - Generate token to access API when user has 2FA activated
@@ -2832,7 +2832,7 @@ export interface OperationMethods {
   'twoFactorAuthenticationControllerAuthenticate'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: Paths.TwoFactorAuthenticationControllerAuthenticate.RequestBody,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.TwoFactorAuthenticationControllerAuthenticate.Responses.$200>
   /**
    * userControllerGetSimpleUserById - Get Simple User
@@ -2840,7 +2840,7 @@ export interface OperationMethods {
   'userControllerGetSimpleUserById'(
     parameters?: Parameters<Paths.UserControllerGetSimpleUserById.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetSimpleUserById.Responses.$200>
   /**
    * getUserOnboardingStatus - Get User Onboarding Status
@@ -2848,7 +2848,7 @@ export interface OperationMethods {
   'getUserOnboardingStatus'(
     parameters?: Parameters<Paths.GetUserOnboardingStatus.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetUserOnboardingStatus.Responses.$200>
   /**
    * getUserKycFiles - Get user kyc files
@@ -2856,7 +2856,7 @@ export interface OperationMethods {
   'getUserKycFiles'(
     parameters?: Parameters<Paths.GetUserKycFiles.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetUserKycFiles.Responses.$200>
   /**
    * userControllerGetKycFile - Download kyc file for specific user ID
@@ -2864,7 +2864,7 @@ export interface OperationMethods {
   'userControllerGetKycFile'(
     parameters?: Parameters<Paths.UserControllerGetKycFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * getLastUserKyc - Get last user kyc
@@ -2872,7 +2872,7 @@ export interface OperationMethods {
   'getLastUserKyc'(
     parameters?: Parameters<Paths.GetLastUserKyc.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetLastUserKyc.Responses.$200>
   /**
    * userControllerGetUserInvestmentsByUserId - Get User Simple Investments
@@ -2880,7 +2880,7 @@ export interface OperationMethods {
   'userControllerGetUserInvestmentsByUserId'(
     parameters?: Parameters<Paths.UserControllerGetUserInvestmentsByUserId.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserInvestmentsByUserId.Responses.$200>
   /**
    * getUserCompanies - Get user companies
@@ -2888,7 +2888,7 @@ export interface OperationMethods {
   'getUserCompanies'(
     parameters?: Parameters<Paths.GetUserCompanies.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetUserCompanies.Responses.$200>
   /**
    * getUserCampaigns - Get user campaigns
@@ -2896,7 +2896,7 @@ export interface OperationMethods {
   'getUserCampaigns'(
     parameters?: Parameters<Paths.GetUserCampaigns.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetUserCampaigns.Responses.$200>
   /**
    * getSimpleCampaignsByUser - Get User Simple Campaigns
@@ -2904,7 +2904,7 @@ export interface OperationMethods {
   'getSimpleCampaignsByUser'(
     parameters?: Parameters<Paths.GetSimpleCampaignsByUser.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetSimpleCampaignsByUser.Responses.$200>
   /**
    * userControllerGetUserQuestionList - List all active questions
@@ -2912,7 +2912,7 @@ export interface OperationMethods {
   'userControllerGetUserQuestionList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserQuestionList.Responses.$200>
   /**
    * userControllerGetUserOnboardFiles - Get files for specific onboard ID
@@ -2920,7 +2920,7 @@ export interface OperationMethods {
   'userControllerGetUserOnboardFiles'(
     parameters?: Parameters<Paths.UserControllerGetUserOnboardFiles.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserOnboardFiles.Responses.$200>
   /**
    * userControllerGetUserOnboardDocument - Download documents for specific onboard ID
@@ -2928,7 +2928,7 @@ export interface OperationMethods {
   'userControllerGetUserOnboardDocument'(
     parameters?: Parameters<Paths.UserControllerGetUserOnboardDocument.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * userControllerDeleteOnboardFile - Delete onboard file
@@ -2936,7 +2936,7 @@ export interface OperationMethods {
   'userControllerDeleteOnboardFile'(
     parameters?: Parameters<Paths.UserControllerDeleteOnboardFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerDeleteOnboardFile.Responses.$200>
   /**
    * userControllerGetUserOnboardList - List all onboard requests
@@ -2944,7 +2944,7 @@ export interface OperationMethods {
   'userControllerGetUserOnboardList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserOnboardList.Responses.$200>
   /**
    * userControllerUserList - List all registered users
@@ -2952,7 +2952,7 @@ export interface OperationMethods {
   'userControllerUserList'(
     parameters?: Parameters<Paths.UserControllerUserList.QueryParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUserList.Responses.$200>
   /**
    * userControllerUserIssuerList - List all issuers
@@ -2960,7 +2960,7 @@ export interface OperationMethods {
   'userControllerUserIssuerList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUserIssuerList.Responses.$200>
   /**
    * userControllerUserInvestorList - List all investors
@@ -2968,7 +2968,7 @@ export interface OperationMethods {
   'userControllerUserInvestorList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerUserInvestorList.Responses.$200>
   /**
    * userControllerGetUserAnswerList - List answers to questions
@@ -2976,7 +2976,7 @@ export interface OperationMethods {
   'userControllerGetUserAnswerList'(
     parameters?: Parameters<Paths.UserControllerGetUserAnswerList.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.UserControllerGetUserAnswerList.Responses.$200>
   /**
    * newsFeedControllerGetNewsFeedList - List all news feed posts
@@ -2984,7 +2984,7 @@ export interface OperationMethods {
   'newsFeedControllerGetNewsFeedList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerGetNewsFeedList.Responses.$200>
   /**
    * newsFeedControllerDownloadNewsFeedFile - Download news feed file
@@ -2992,7 +2992,7 @@ export interface OperationMethods {
   'newsFeedControllerDownloadNewsFeedFile'(
     parameters?: Parameters<Paths.NewsFeedControllerDownloadNewsFeedFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * newsFeedControllerDeleteNewsFeedFile - Delete news feed file
@@ -3000,7 +3000,7 @@ export interface OperationMethods {
   'newsFeedControllerDeleteNewsFeedFile'(
     parameters?: Parameters<Paths.NewsFeedControllerDeleteNewsFeedFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.NewsFeedControllerDeleteNewsFeedFile.Responses.$200>
   /**
    * investmentControllerGetInvestmentFiles - Get files from investment request
@@ -3008,7 +3008,7 @@ export interface OperationMethods {
   'investmentControllerGetInvestmentFiles'(
     parameters?: Parameters<Paths.InvestmentControllerGetInvestmentFiles.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerGetInvestmentFiles.Responses.$200>
   /**
    * investmentControllerDownloadInvestmentFile - Download investment file
@@ -3016,7 +3016,7 @@ export interface OperationMethods {
   'investmentControllerDownloadInvestmentFile'(
     parameters?: Parameters<Paths.InvestmentControllerDownloadInvestmentFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * investmentControllerDeleteInvestmentFile - Delete investment file
@@ -3024,7 +3024,7 @@ export interface OperationMethods {
   'investmentControllerDeleteInvestmentFile'(
     parameters?: Parameters<Paths.InvestmentControllerDeleteInvestmentFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerDeleteInvestmentFile.Responses.$200>
   /**
    * investmentControllerGetInvestments - Get investments request
@@ -3032,7 +3032,7 @@ export interface OperationMethods {
   'investmentControllerGetInvestments'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerGetInvestments.Responses.$200>
   /**
    * investmentControllerGetAllInvestmentsFromCampaign - Get investment request
@@ -3040,7 +3040,7 @@ export interface OperationMethods {
   'investmentControllerGetAllInvestmentsFromCampaign'(
     parameters?: Parameters<Paths.InvestmentControllerGetAllInvestmentsFromCampaign.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.InvestmentControllerGetAllInvestmentsFromCampaign.Responses.$200>
   /**
    * test
@@ -3048,7 +3048,7 @@ export interface OperationMethods {
   'test'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * helloUser
@@ -3056,7 +3056,7 @@ export interface OperationMethods {
   'helloUser'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * testPubSub
@@ -3064,7 +3064,7 @@ export interface OperationMethods {
   'testPubSub'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.TestPubSub.Responses.$200>
   /**
    * helloAdmin
@@ -3072,7 +3072,7 @@ export interface OperationMethods {
   'helloAdmin'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * feedbackControllerGetAllFeedbackAnswers - Get Feedback form answers
@@ -3080,7 +3080,7 @@ export interface OperationMethods {
   'feedbackControllerGetAllFeedbackAnswers'(
     parameters?: Parameters<Paths.FeedbackControllerGetAllFeedbackAnswers.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerGetAllFeedbackAnswers.Responses.$200>
   /**
    * feedbackControllerGetFeedbackForm - Get feedback form data by form name
@@ -3088,7 +3088,7 @@ export interface OperationMethods {
   'feedbackControllerGetFeedbackForm'(
     parameters?: Parameters<Paths.FeedbackControllerGetFeedbackForm.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.FeedbackControllerGetFeedbackForm.Responses.$200>
   /**
    * companyControllerGetCompanyMembers - Get company members
@@ -3096,7 +3096,7 @@ export interface OperationMethods {
   'companyControllerGetCompanyMembers'(
     parameters?: Parameters<Paths.CompanyControllerGetCompanyMembers.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerGetCompanyMembers.Responses.$200>
   /**
    * companyControllerGetCompanyFiles - Get company files
@@ -3104,7 +3104,7 @@ export interface OperationMethods {
   'companyControllerGetCompanyFiles'(
     parameters?: Parameters<Paths.CompanyControllerGetCompanyFiles.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerGetCompanyFiles.Responses.$200>
   /**
    * companyControllerDownloadCompanyFile - Download company file
@@ -3112,7 +3112,7 @@ export interface OperationMethods {
   'companyControllerDownloadCompanyFile'(
     parameters?: Parameters<Paths.CompanyControllerDownloadCompanyFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * companyControllerDeleteCompanyFile - Delete company file
@@ -3120,7 +3120,7 @@ export interface OperationMethods {
   'companyControllerDeleteCompanyFile'(
     parameters?: Parameters<Paths.CompanyControllerDeleteCompanyFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerDeleteCompanyFile.Responses.$200>
   /**
    * companyControllerGetCompanyList - List all companies
@@ -3128,7 +3128,7 @@ export interface OperationMethods {
   'companyControllerGetCompanyList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CompanyControllerGetCompanyList.Responses.$200>
   /**
    * getSimpleCampaignById - Get Simple Campaign By Id
@@ -3136,7 +3136,7 @@ export interface OperationMethods {
   'getSimpleCampaignById'(
     parameters?: Parameters<Paths.GetSimpleCampaignById.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.GetSimpleCampaignById.Responses.$200>
   /**
    * campaignControllerGetPublicCampaign - Get public campaign
@@ -3144,7 +3144,7 @@ export interface OperationMethods {
   'campaignControllerGetPublicCampaign'(
     parameters?: Parameters<Paths.CampaignControllerGetPublicCampaign.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetPublicCampaign.Responses.$200>
   /**
    * campaignControllerGetCampaignMembers - Get campaign members
@@ -3152,7 +3152,7 @@ export interface OperationMethods {
   'campaignControllerGetCampaignMembers'(
     parameters?: Parameters<Paths.CampaignControllerGetCampaignMembers.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetCampaignMembers.Responses.$200>
   /**
    * campaignControllerGetCampaignFiles - Get campaign files
@@ -3160,7 +3160,7 @@ export interface OperationMethods {
   'campaignControllerGetCampaignFiles'(
     parameters?: Parameters<Paths.CampaignControllerGetCampaignFiles.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetCampaignFiles.Responses.$200>
   /**
    * campaignControllerDownloadCampaignFile - Download campaign file
@@ -3168,7 +3168,7 @@ export interface OperationMethods {
   'campaignControllerDownloadCampaignFile'(
     parameters?: Parameters<Paths.CampaignControllerDownloadCampaignFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * campaignControllerDeleteCampaignFile - Delete campaign file
@@ -3176,7 +3176,7 @@ export interface OperationMethods {
   'campaignControllerDeleteCampaignFile'(
     parameters?: Parameters<Paths.CampaignControllerDeleteCampaignFile.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerDeleteCampaignFile.Responses.$200>
   /**
    * campaignControllerDownloadCampaignMemberAvatar - Download campaign member avatar
@@ -3184,7 +3184,7 @@ export interface OperationMethods {
   'campaignControllerDownloadCampaignMemberAvatar'(
     parameters?: Parameters<Paths.CampaignControllerDownloadCampaignMemberAvatar.PathParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<any>
   /**
    * campaignControllerGetCampaignList - List all campaigns
@@ -3192,7 +3192,7 @@ export interface OperationMethods {
   'campaignControllerGetCampaignList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetCampaignList.Responses.$200>
   /**
    * campaignControllerGetPublicCampaignList - List public campaigns
@@ -3200,7 +3200,7 @@ export interface OperationMethods {
   'campaignControllerGetPublicCampaignList'(
     parameters?: Parameters<Paths.CampaignControllerGetPublicCampaignList.QueryParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.CampaignControllerGetPublicCampaignList.Responses.$200>
   /**
    * authControllerGetLoggedInUser - Callback endpoint for Google Auth
@@ -3208,7 +3208,7 @@ export interface OperationMethods {
   'authControllerGetLoggedInUser'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerGetLoggedInUser.Responses.$200>
   /**
    * authControllerEmailConfirm - Set user email to verified if token is valid
@@ -3216,7 +3216,7 @@ export interface OperationMethods {
   'authControllerEmailConfirm'(
     parameters?: Parameters<Paths.AuthControllerEmailConfirm.QueryParameters> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuthControllerEmailConfirm.Responses.$200>
   /**
    * auditControllerGetAuditList - List audit logs
@@ -3224,7 +3224,7 @@ export interface OperationMethods {
   'auditControllerGetAuditList'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.AuditControllerGetAuditList.Responses.$200>
   /**
    * twoFactorAuthenticationControllerTwoFactorAuthenticateGenerate - Generate qrcode to activate 2FA
@@ -3232,7 +3232,7 @@ export interface OperationMethods {
   'twoFactorAuthenticationControllerTwoFactorAuthenticateGenerate'(
     parameters?: Parameters<UnknownParamsObject> | null,
     data?: any,
-    config?: AxiosRequestConfig  
+    config?: AxiosRequestConfig
   ): OperationResponse<Paths.TwoFactorAuthenticationControllerTwoFactorAuthenticateGenerate.Responses.$200>
 }
 
@@ -3244,7 +3244,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUser.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUser.Responses.$200>
     /**
      * userControllerUpdateUser - Update user
@@ -3252,7 +3252,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.UserControllerUpdateUser.PathParameters> | null,
       data?: Paths.UserControllerUpdateUser.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUpdateUser.Responses.$200>
   }
   ['/user/{id}/wallet']: {
@@ -3262,7 +3262,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.UserControllerUpdateUserWallet.PathParameters> | null,
       data?: Paths.UserControllerUpdateUserWallet.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUpdateUserWallet.Responses.$200>
   }
   ['/user/question/{id}']: {
@@ -3272,7 +3272,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.UserControllerUpdateUserQuestion.PathParameters> | null,
       data?: Paths.UserControllerUpdateUserQuestion.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUpdateUserQuestion.Responses.$200>
     /**
      * userControllerDeleteUserQuestion - Delete question
@@ -3280,7 +3280,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.UserControllerDeleteUserQuestion.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerDeleteUserQuestion.Responses.$200>
   }
   ['/user/onboard/{id}']: {
@@ -3290,7 +3290,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUserOnboard.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserOnboard.Responses.$200>
     /**
      * userControllerUpdateUserOnboard - Update user onboard request
@@ -3298,7 +3298,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.UserControllerUpdateUserOnboard.PathParameters> | null,
       data?: Paths.UserControllerUpdateUserOnboard.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUpdateUserOnboard.Responses.$200>
   }
   ['/news-feed/{id}']: {
@@ -3308,7 +3308,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.NewsFeedControllerGetNewsFeedById.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerGetNewsFeedById.Responses.$200>
     /**
      * newsFeedControllerUpdateNewsFeed - Update news feed post details
@@ -3316,7 +3316,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.NewsFeedControllerUpdateNewsFeed.PathParameters> | null,
       data?: Paths.NewsFeedControllerUpdateNewsFeed.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerUpdateNewsFeed.Responses.$200>
     /**
      * newsFeedControllerUpdatePostVisibility - Update news feed post visibility
@@ -3324,7 +3324,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.NewsFeedControllerUpdatePostVisibility.PathParameters> | null,
       data?: Paths.NewsFeedControllerUpdatePostVisibility.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerUpdatePostVisibility.Responses.$200>
     /**
      * newsFeedControllerDeletePost - Delete news feed post
@@ -3332,7 +3332,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.NewsFeedControllerDeletePost.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerDeletePost.Responses.$200>
   }
   ['/investment/{id}']: {
@@ -3342,7 +3342,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.InvestmentControllerGetInvestment.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerGetInvestment.Responses.$200>
     /**
      * investmentControllerUpdateInvestment - Update investment request
@@ -3350,7 +3350,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.InvestmentControllerUpdateInvestment.PathParameters> | null,
       data?: Paths.InvestmentControllerUpdateInvestment.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerUpdateInvestment.Responses.$200>
   }
   ['/feedback/{id}']: {
@@ -3360,7 +3360,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.FeedbackControllerUpdateFeedback.PathParameters> | null,
       data?: Paths.FeedbackControllerUpdateFeedback.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerUpdateFeedback.Responses.$200>
   }
   ['/company/{id}']: {
@@ -3370,7 +3370,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CompanyControllerGetCompanyById.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerGetCompanyById.Responses.$200>
     /**
      * companyControllerUpdateCompany - Update company details
@@ -3378,7 +3378,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.CompanyControllerUpdateCompany.PathParameters> | null,
       data?: Paths.CompanyControllerUpdateCompany.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerUpdateCompany.Responses.$200>
   }
   ['/company/{id}/member/{memberId}']: {
@@ -3388,7 +3388,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.CompanyControllerUpdateCompanyMember.PathParameters> | null,
       data?: Paths.CompanyControllerUpdateCompanyMember.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerUpdateCompanyMember.Responses.$200>
     /**
      * companyControllerDeleteCompanyMember - Delete company member
@@ -3396,7 +3396,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.CompanyControllerDeleteCompanyMember.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerDeleteCompanyMember.Responses.$200>
   }
   ['/campaign/{id}']: {
@@ -3406,7 +3406,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerGetCampaign.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetCampaign.Responses.$200>
     /**
      * campaignControllerUpdateCampaign - Update campaign details
@@ -3414,7 +3414,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.CampaignControllerUpdateCampaign.PathParameters> | null,
       data?: Paths.CampaignControllerUpdateCampaign.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerUpdateCampaign.Responses.$200>
   }
   ['/campaign/{id}/member/{memberId}']: {
@@ -3424,7 +3424,7 @@ export interface PathsDictionary {
     'put'(
       parameters?: Parameters<Paths.CampaignControllerUpdateCampaignMember.PathParameters & Paths.CampaignControllerUpdateCampaignMember.QueryParameters> | null,
       data?: Paths.CampaignControllerUpdateCampaignMember.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerUpdateCampaignMember.Responses.$200>
     /**
      * campaignControllerDeleteCampaignMember - Delete campaign member
@@ -3432,7 +3432,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.CampaignControllerDeleteCampaignMember.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerDeleteCampaignMember.Responses.$200>
   }
   ['/user']: {
@@ -3442,7 +3442,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.UserControllerCreateUser.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerCreateUser.Responses.$200>
   }
   ['/user/verify']: {
@@ -3452,7 +3452,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerStartKyc.Responses.$200>
   }
   ['/user/verify/callback']: {
@@ -3462,7 +3462,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.UserControllerEventKyc.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerEventKyc.Responses.$200>
   }
   ['/user/updatePassword']: {
@@ -3472,7 +3472,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.UserControllerUpdatePassword.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUpdatePassword.Responses.$200>
   }
   ['/user/question']: {
@@ -3482,7 +3482,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.UserControllerAddUserQuestion.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerAddUserQuestion.Responses.$200>
   }
   ['/user/onboard/{id}/file/{documentType}']: {
@@ -3492,7 +3492,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.UserControllerAddUserOnboardDocument.PathParameters> | null,
       data?: Paths.UserControllerAddUserOnboardDocument.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerAddUserOnboardDocument.Responses.$200>
   }
   ['/user/answers/{investmentId}']: {
@@ -3502,7 +3502,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.UserControllerAddUserAnswers.PathParameters> | null,
       data?: Paths.UserControllerAddUserAnswers.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerAddUserAnswers.Responses.$200>
   }
   ['/news-feed']: {
@@ -3512,7 +3512,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.NewsFeedControllerCreatePost.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerCreatePost.Responses.$200>
   }
   ['/news-feed/{id}/file/{type}']: {
@@ -3522,7 +3522,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.NewsFeedControllerAddNewsFeedFile.PathParameters> | null,
       data?: Paths.NewsFeedControllerAddNewsFeedFile.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerAddNewsFeedFile.Responses.$200>
   }
   ['/investment']: {
@@ -3532,7 +3532,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.InvestmentControllerCreateInvestment.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerCreateInvestment.Responses.$200>
   }
   ['/investment/{id}/file/{type}']: {
@@ -3542,7 +3542,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.InvestmentControllerAddInvestmentFile.PathParameters> | null,
       data?: Paths.InvestmentControllerAddInvestmentFile.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerAddInvestmentFile.Responses.$200>
   }
   ['/investment/presubscription']: {
@@ -3552,7 +3552,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.InvestmentControllerCreatePresubscription.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerCreatePresubscription.Responses.$200>
   }
   ['/feedback']: {
@@ -3562,7 +3562,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerGetFeedbackForms.Responses.$200>
     /**
      * feedbackControllerAddFeedback - Add feedback form
@@ -3570,7 +3570,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.FeedbackControllerAddFeedback.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerAddFeedback.Responses.$200>
   }
   ['/feedback/{formName}/answer']: {
@@ -3580,7 +3580,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.FeedbackControllerAnswerFeedback.PathParameters> | null,
       data?: Paths.FeedbackControllerAnswerFeedback.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerAnswerFeedback.Responses.$200>
   }
   ['/company']: {
@@ -3590,7 +3590,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.CompanyControllerCreateCompany.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerCreateCompany.Responses.$200>
   }
   ['/company/{id}/member']: {
@@ -3600,7 +3600,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.CompanyControllerCreateCompanyMember.PathParameters> | null,
       data?: Paths.CompanyControllerCreateCompanyMember.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerCreateCompanyMember.Responses.$200>
   }
   ['/company/{id}/file/{documentType}']: {
@@ -3610,7 +3610,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.CompanyControllerUploadCompanyFile.PathParameters> | null,
       data?: Paths.CompanyControllerUploadCompanyFile.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerUploadCompanyFile.Responses.$200>
   }
   ['/campaign']: {
@@ -3620,7 +3620,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.CampaignControllerCreateCampaign.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerCreateCampaign.Responses.$200>
   }
   ['/campaign/{id}/member']: {
@@ -3630,7 +3630,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.CampaignControllerCreateCampaignMember.PathParameters & Paths.CampaignControllerCreateCampaignMember.QueryParameters> | null,
       data?: Paths.CampaignControllerCreateCampaignMember.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerCreateCampaignMember.Responses.$200>
   }
   ['/campaign/{id}/issueTokens']: {
@@ -3640,7 +3640,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.CampaignControllerIssueCampaignTokens.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerIssueCampaignTokens.Responses.$200>
   }
   ['/campaign/{id}/file/{documentType}']: {
@@ -3650,7 +3650,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<Paths.CampaignControllerUploadCampaignFile.PathParameters> | null,
       data?: Paths.CampaignControllerUploadCampaignFile.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerUploadCampaignFile.Responses.$200>
   }
   ['/auth/updatePassword']: {
@@ -3660,7 +3660,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.AuthControllerUpdatePassword.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerUpdatePassword.Responses.$200>
   }
   ['/auth/resetPassword']: {
@@ -3670,7 +3670,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.AuthControllerResetPassword.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerResetPassword.Responses.$200>
   }
   ['/auth/register']: {
@@ -3680,7 +3680,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.AuthControllerRegister.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerRegister.Responses.$200>
   }
   ['/auth/login']: {
@@ -3690,7 +3690,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.AuthControllerLogin.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerLogin.Responses.$200>
   }
   ['/2fa/authenticate']: {
@@ -3700,7 +3700,7 @@ export interface PathsDictionary {
     'post'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: Paths.TwoFactorAuthenticationControllerAuthenticate.RequestBody,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.TwoFactorAuthenticationControllerAuthenticate.Responses.$200>
   }
   ['/user/{id}/simple']: {
@@ -3710,7 +3710,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetSimpleUserById.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetSimpleUserById.Responses.$200>
   }
   ['/user/{id}/onboard/status']: {
@@ -3720,7 +3720,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetUserOnboardingStatus.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetUserOnboardingStatus.Responses.$200>
   }
   ['/user/{id}/kycfiles']: {
@@ -3730,7 +3730,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetUserKycFiles.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetUserKycFiles.Responses.$200>
   }
   ['/user/{id}/kyc/{fileId}']: {
@@ -3740,7 +3740,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetKycFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
   }
   ['/user/{id}/kyc/details']: {
@@ -3750,7 +3750,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetLastUserKyc.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetLastUserKyc.Responses.$200>
   }
   ['/user/{id}/investments/simple']: {
@@ -3760,7 +3760,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUserInvestmentsByUserId.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserInvestmentsByUserId.Responses.$200>
   }
   ['/user/{id}/companies']: {
@@ -3770,7 +3770,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetUserCompanies.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetUserCompanies.Responses.$200>
   }
   ['/user/{id}/campaigns']: {
@@ -3780,7 +3780,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetUserCampaigns.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetUserCampaigns.Responses.$200>
   }
   ['/user/{id}/campaigns/simple']: {
@@ -3790,7 +3790,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetSimpleCampaignsByUser.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetSimpleCampaignsByUser.Responses.$200>
   }
   ['/user/question/list']: {
@@ -3800,7 +3800,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserQuestionList.Responses.$200>
   }
   ['/user/onboard/{id}/files']: {
@@ -3810,7 +3810,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUserOnboardFiles.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserOnboardFiles.Responses.$200>
   }
   ['/user/onboard/{id}/file/{fileId}']: {
@@ -3820,7 +3820,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUserOnboardDocument.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
     /**
      * userControllerDeleteOnboardFile - Delete onboard file
@@ -3828,7 +3828,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.UserControllerDeleteOnboardFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerDeleteOnboardFile.Responses.$200>
   }
   ['/user/onboard/list']: {
@@ -3838,7 +3838,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserOnboardList.Responses.$200>
   }
   ['/user/list']: {
@@ -3848,7 +3848,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerUserList.QueryParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUserList.Responses.$200>
   }
   ['/user/issuer/list']: {
@@ -3858,7 +3858,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUserIssuerList.Responses.$200>
   }
   ['/user/investor/list']: {
@@ -3868,7 +3868,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerUserInvestorList.Responses.$200>
   }
   ['/user/answer/list/{investmentId}']: {
@@ -3878,7 +3878,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.UserControllerGetUserAnswerList.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.UserControllerGetUserAnswerList.Responses.$200>
   }
   ['/news-feed/list']: {
@@ -3888,7 +3888,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerGetNewsFeedList.Responses.$200>
   }
   ['/news-feed/file/{fileId}']: {
@@ -3898,7 +3898,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.NewsFeedControllerDownloadNewsFeedFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
     /**
      * newsFeedControllerDeleteNewsFeedFile - Delete news feed file
@@ -3906,7 +3906,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.NewsFeedControllerDeleteNewsFeedFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.NewsFeedControllerDeleteNewsFeedFile.Responses.$200>
   }
   ['/investment/{id}/files']: {
@@ -3916,7 +3916,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.InvestmentControllerGetInvestmentFiles.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerGetInvestmentFiles.Responses.$200>
   }
   ['/investment/{id}/file/{fileId}']: {
@@ -3926,7 +3926,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.InvestmentControllerDownloadInvestmentFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
     /**
      * investmentControllerDeleteInvestmentFile - Delete investment file
@@ -3934,7 +3934,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.InvestmentControllerDeleteInvestmentFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerDeleteInvestmentFile.Responses.$200>
   }
   ['/investment/list']: {
@@ -3944,7 +3944,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerGetInvestments.Responses.$200>
   }
   ['/investment/campaign/{id}']: {
@@ -3954,7 +3954,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.InvestmentControllerGetAllInvestmentsFromCampaign.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.InvestmentControllerGetAllInvestmentsFromCampaign.Responses.$200>
   }
   ['/hello']: {
@@ -3964,7 +3964,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
   }
   ['/hello/user']: {
@@ -3974,7 +3974,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
   }
   ['/hello/pubsub']: {
@@ -3984,7 +3984,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.TestPubSub.Responses.$200>
   }
   ['/hello/admin']: {
@@ -3994,7 +3994,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
   }
   ['/feedback/{id}/answers']: {
@@ -4004,7 +4004,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.FeedbackControllerGetAllFeedbackAnswers.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerGetAllFeedbackAnswers.Responses.$200>
   }
   ['/feedback/{formName}']: {
@@ -4014,7 +4014,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.FeedbackControllerGetFeedbackForm.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.FeedbackControllerGetFeedbackForm.Responses.$200>
   }
   ['/company/{id}/member/list']: {
@@ -4024,7 +4024,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CompanyControllerGetCompanyMembers.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerGetCompanyMembers.Responses.$200>
   }
   ['/company/{id}/files/list']: {
@@ -4034,7 +4034,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CompanyControllerGetCompanyFiles.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerGetCompanyFiles.Responses.$200>
   }
   ['/company/{id}/file/{fileId}']: {
@@ -4044,7 +4044,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CompanyControllerDownloadCompanyFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
     /**
      * companyControllerDeleteCompanyFile - Delete company file
@@ -4052,7 +4052,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.CompanyControllerDeleteCompanyFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerDeleteCompanyFile.Responses.$200>
   }
   ['/company/list']: {
@@ -4062,7 +4062,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CompanyControllerGetCompanyList.Responses.$200>
   }
   ['/campaign/{id}/status']: {
@@ -4072,7 +4072,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.GetSimpleCampaignById.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.GetSimpleCampaignById.Responses.$200>
   }
   ['/campaign/{id}/public']: {
@@ -4082,7 +4082,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerGetPublicCampaign.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetPublicCampaign.Responses.$200>
   }
   ['/campaign/{id}/member/list']: {
@@ -4092,7 +4092,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerGetCampaignMembers.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetCampaignMembers.Responses.$200>
   }
   ['/campaign/{id}/files/list']: {
@@ -4102,7 +4102,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerGetCampaignFiles.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetCampaignFiles.Responses.$200>
   }
   ['/campaign/{id}/file/{fileId}']: {
@@ -4112,7 +4112,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerDownloadCampaignFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
     /**
      * campaignControllerDeleteCampaignFile - Delete campaign file
@@ -4120,7 +4120,7 @@ export interface PathsDictionary {
     'delete'(
       parameters?: Parameters<Paths.CampaignControllerDeleteCampaignFile.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerDeleteCampaignFile.Responses.$200>
   }
   ['/campaign/member/{memberId}/avatar']: {
@@ -4130,7 +4130,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerDownloadCampaignMemberAvatar.PathParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<any>
   }
   ['/campaign/list']: {
@@ -4140,7 +4140,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetCampaignList.Responses.$200>
   }
   ['/campaign/list/public']: {
@@ -4150,7 +4150,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.CampaignControllerGetPublicCampaignList.QueryParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.CampaignControllerGetPublicCampaignList.Responses.$200>
   }
   ['/auth/google/callback']: {
@@ -4160,7 +4160,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerGetLoggedInUser.Responses.$200>
   }
   ['/auth/email/confirm']: {
@@ -4170,7 +4170,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<Paths.AuthControllerEmailConfirm.QueryParameters> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuthControllerEmailConfirm.Responses.$200>
   }
   ['/audit/list']: {
@@ -4180,7 +4180,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.AuditControllerGetAuditList.Responses.$200>
   }
   ['/2fa/generate']: {
@@ -4190,7 +4190,7 @@ export interface PathsDictionary {
     'get'(
       parameters?: Parameters<UnknownParamsObject> | null,
       data?: any,
-      config?: AxiosRequestConfig  
+      config?: AxiosRequestConfig
     ): OperationResponse<Paths.TwoFactorAuthenticationControllerTwoFactorAuthenticateGenerate.Responses.$200>
   }
 }

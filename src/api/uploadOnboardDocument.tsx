@@ -1,6 +1,6 @@
 import { GadgetClientJava } from '../lib/axios';
 import { Components } from '../lib/GadgetClientJava';
-import { apiUrlJava } from '../utils/getApiUrlByEnv';
+import { apiUrl } from '../utils/getApiUrlByEnv';
 
 export const uploadOnboardDocument = async (
   onboardId: number,
@@ -14,7 +14,7 @@ export const uploadOnboardDocument = async (
     const response = await client.userControllerAddUserOnboardDocument(
       { id: onboardId, documentType },
       bodyFormData,
-      { baseURL: apiUrlJava, headers: { 'Content-Type': 'multipart/form-data' } }
+      { baseURL: apiUrl, headers: { 'Content-Type': 'multipart/form-data' } }
     );
     return response.data as Components.Schemas.UserOnboardFileOutputDto[];
   } catch (err) {

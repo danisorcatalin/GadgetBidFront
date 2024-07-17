@@ -87,7 +87,7 @@ const LoginJWT: FC = (props) => {
           />
           {errors.submit && (
             <Box sx={{ mt: 3 }}>
-              <FormHelperText error>{errors.submit}</FormHelperText>
+              <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
             </Box>
           )}
           <Spacer marginTop="32px" />

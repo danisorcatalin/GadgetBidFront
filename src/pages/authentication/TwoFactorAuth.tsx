@@ -55,7 +55,7 @@ const TwoFactorAuth: FC = () => {
           justifyContent: 'flex-start',
         }}
       >
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
               height: 50,
@@ -116,7 +116,7 @@ const TwoFactorAuth: FC = () => {
                       display: 'flex',
                       flexDirection: 'column',
                       p: 0,
-                      backgroundColor: '#EBF0FF',
+                      backgroundColor: '#F4F6FF',
                     }}
                   >
                     <Box
@@ -173,7 +173,7 @@ const TwoFactorAuth: FC = () => {
                       />
                       {errors.submit && (
                         <Box sx={{ mt: 1 }}>
-                          <FormHelperText error>{errors.submit}</FormHelperText>
+                          <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
                         </Box>
                       )}
                     </Box>
@@ -194,7 +194,7 @@ const TwoFactorAuth: FC = () => {
                       </Button>
                       <Divider
                         variant="middle"
-                        sx={{ ml: 0, mr: 0, mt: 3.5, backgroundColor: '#3769FF' }}
+                        sx={{ ml: 0, mr: 0, mt: 3.5, backgroundColor: '#96B7DB' }}
                       />
                       <Link
                         underline="hover"

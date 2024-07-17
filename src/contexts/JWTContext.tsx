@@ -6,10 +6,9 @@ import jwtDecode from 'jwt-decode';
 import PropTypes from 'prop-types';
 import { GadgetClientJava } from '../lib/axios';
 import { Components } from '../lib/GadgetClientJava';
-import type { User, RegisteredUserRole } from '../types/user';
+import type { User } from '../types/user';
 import { Routes } from '../constants';
 import { RegisterSuccessSnack } from '../snacks';
-// import { verify, JWT_SECRET } from '../utils/jwt';
 import { EmailVerificationStatus, PasswordResetStatus, PasswordUpdateStatus } from '../types/auth';
 interface RegisterRequest {
   email: string;
@@ -17,7 +16,6 @@ interface RegisterRequest {
   lastName: string;
   phone: string;
   password: string;
-  role: RegisteredUserRole;
 }
 
 interface VerifyEmailRequest {
@@ -298,7 +296,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
   };
 
   const register = async (payload: RegisterRequest): Promise<void> => {
-    const { email, firstName, lastName, phone, password, role } = payload;
+    const { email, firstName, lastName, phone, password } = payload;
     const client = await GadgetClientJava.getClient();
     try {
       const response = await client.authControllerRegister(undefined, {
@@ -307,8 +305,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
         lastName,
         phone,
         password,
-        passwordConfirmation: password,
-        role,
+        passwordConfirmation: password
       });
       if (response.status === 200) {
         enqueueSnackbar(RegisterSuccessSnack.message, {

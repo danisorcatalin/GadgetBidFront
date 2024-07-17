@@ -1,13 +1,11 @@
 import { Suspense, lazy } from 'react';
-import type { PartialRouteObject } from 'react-router';
+import type { RouteObject } from 'react-router';
 import { Navigate } from 'react-router-dom';
 import AuthGuard from './components/AuthGuard';
 import GuestGuard from './components/GuestGuard';
 import UserRoleGuard from './components/UserRoleGuard';
 import LoadingScreen from './components/LoadingScreen';
 import DashboardLayout from './components/dashboard/DashboardLayout';
-import InvestmentCampaignGuard from 'components/InvestmentCampaignGuard';
-import InvestmentCampaignDetailsPreviewGuard from 'components/InvestmentCampaignDetailsPreviewGuard';
 
 const Loadable = (Component) => (props) =>
   (
@@ -25,70 +23,15 @@ const Register = Loadable(lazy(() => import('./pages/authentication/Register')))
 // Dashboard pages
 const Account = Loadable(lazy(() => import('./pages/dashboard/Account')));
 const Overview = Loadable(lazy(() => import('./pages/dashboard/Overview')));
-const InvestorWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/investors/InvestorsWorkspace.swr'))
-);
 
-const InvestorOnboardProfile = Loadable(
-  lazy(() => import('./pages/dashboard/manager/investors/InvestorProfileWorkspace.swr'))
-);
-
-const CampaignDetails = Loadable(
-  lazy(() => import('./pages/dashboard/issuer/CampaignDetails.swr'))
-);
 const IssuerWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/issuers/IssuersWorkspace.swr'))
+  lazy(() => import('./pages/dashboard/manager/issuers/UserWorkspace.swr'))
 );
 const IssuerOnboardProfile = Loadable(
-  lazy(() => import('./pages/dashboard/manager/issuers/IssuerProfileWorkspace.swr'))
-);
-
-const CampaignsWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/campaigns/CampaignsWorkspace.swr'))
-);
-
-const CampaignDetailsWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/campaigns/CampaignDetailsWorkspace.swr'))
-);
-
-const InvestmentsWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/investments/InvestmentsWorkspace.swr'))
+  lazy(() => import('./pages/dashboard/manager/issuers/ProfileWorkspace.swr'))
 );
 
 const IssuerProfile = Loadable(lazy(() => import('./pages/dashboard/issuer/IssuerProfile.swr')));
-const InvestorProfile = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestorProfile.swr'))
-);
-
-const InvestorInvestments = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestorInvestments.swr'))
-);
-
-const InvestorInvestmentDetails = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestorInvestmentDetails.swr'))
-);
-
-const InvestorInvestmentDetailsWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/investments/InvestorInvestmentDetailsWorkspace.swr'))
-);
-
-const InvestmentCampaignDetails = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestmentCampaignDetails.swr'))
-);
-
-const InvestmentCampaignDetailsWorkspace = Loadable(
-  lazy(() => import('./pages/dashboard/manager/investments/InvestmentCampaignDetailsWorkspace.swr'))
-);
-
-const Presubscribe = Loadable(lazy(() => import('./pages/dashboard/investor/Presubscribe.swr')));
-
-const InvestmentWizard = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestmentWizard.swr'))
-);
-
-const InvestmentWizardFinish = Loadable(
-  lazy(() => import('./pages/dashboard/investor/InvestmentWizardFinish.swr'))
-);
 
 const NewsFeedWorkspace = Loadable(
   lazy(() => import('./pages/dashboard/manager/news-feed/NewsFeedWorkspace.swr'))
@@ -106,7 +49,7 @@ const PasswordRecoveryLinkSent = Loadable(lazy(() => import('./pages/PasswordRec
 const EmailConfirmationSent = Loadable(lazy(() => import('./pages/EmailConfirmationSent')));
 const EmailVerification = Loadable(lazy(() => import('./pages/EmailVerification')));
 
-const routes: PartialRouteObject[] = [
+const routes: RouteObject[] = [
   {
     path: 'authentication',
     children: [
@@ -145,36 +88,12 @@ const routes: PartialRouteObject[] = [
     ),
     children: [
       {
-        path: '/',
+        path: 'overview',
         element: <Overview />,
       },
       {
         path: 'account',
         element: <Account />,
-      },
-      {
-        path: 'investors-workspace',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestorWorkspace />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investors-workspace/:userId',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestorOnboardProfile />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investors-workspace/:userId/investment/:id',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestorInvestmentDetails />
-          </UserRoleGuard>
-        ),
       },
       {
         path: 'issuers-workspace',
@@ -193,120 +112,10 @@ const routes: PartialRouteObject[] = [
         ),
       },
       {
-        path: 'campaigns-workspace',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <CampaignsWorkspace />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'campaigns-workspace/:campaignId',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <CampaignDetailsWorkspace />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investments-workspace',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestmentsWorkspace />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investments-workspace/:investmentId',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestorInvestmentDetailsWorkspace />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'crowdfunding-campaign',
-        element: <UserRoleGuard roles={['ADMIN', 'ISSUER']}>{<CampaignDetails />}</UserRoleGuard>,
-      },
-      {
-        path: 'crowdfunding-campaign/:campaignId',
-        element: <UserRoleGuard roles={['ADMIN', 'ISSUER']}>{<CampaignDetails />}</UserRoleGuard>,
-      },
-      {
         path: 'company-profile',
         element: (
-          <UserRoleGuard roles={['ISSUER']}>
+          <UserRoleGuard roles={['USER']}>
             <IssuerProfile />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investor-profile',
-        element: (
-          <UserRoleGuard roles={['INVESTOR']}>
-            <InvestorProfile />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investor-investments',
-        element: (
-          <UserRoleGuard roles={['INVESTOR']}>
-            <InvestorInvestments />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'presubscribe/:campaignId',
-        element: (
-          <UserRoleGuard roles={['INVESTOR', 'ADMIN']}>
-            <InvestmentCampaignGuard status={'AUDIT_DONE'}>
-              <Presubscribe />
-            </InvestmentCampaignGuard>
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investment-wizard/:campaignId',
-        element: (
-          <UserRoleGuard roles={['INVESTOR', 'ADMIN']}>
-            <InvestmentCampaignGuard status={'LISTED'}>
-              <InvestmentWizard />
-            </InvestmentCampaignGuard>
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investment-wizard/finish',
-        element: (
-          <UserRoleGuard roles={['INVESTOR', 'ADMIN']}>
-            <InvestmentWizardFinish />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investor-investments/:investmentId',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER', 'INVESTOR']}>
-            <InvestorInvestmentDetails />
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investor-campaign/:campaignId',
-        element: (
-          <UserRoleGuard roles={['INVESTOR', 'ISSUER', 'ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestmentCampaignDetailsPreviewGuard>
-              <InvestmentCampaignDetails />
-            </InvestmentCampaignDetailsPreviewGuard>
-          </UserRoleGuard>
-        ),
-      },
-      {
-        path: 'investor-campaign-workspace/:campaignId',
-        element: (
-          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
-            <InvestmentCampaignDetailsWorkspace />
           </UserRoleGuard>
         ),
       },
@@ -321,18 +130,18 @@ const routes: PartialRouteObject[] = [
       {
         path: 'news-feed',
         element: (
-          <UserRoleGuard roles={['INVESTOR', 'ISSUER']}>
+          <UserRoleGuard roles={['ADMIN', 'ACCOUNT_MANAGER']}>
             <NewsFeed />
           </UserRoleGuard>
         ),
-      },
+      }
     ],
   },
   {
     path: '*',
     children: [
       {
-        path: '/',
+        path: 'dashboard',
         element: <Navigate to="/dashboard" replace />,
       },
       {

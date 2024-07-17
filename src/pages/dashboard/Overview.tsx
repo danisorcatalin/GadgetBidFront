@@ -1,4 +1,3 @@
-import InvestmentCampaignsPage from './investor/InvestmentCampaigns.swr';
 import IssuerOverview from 'components/dashboard/IssuerOverview';
 import ManagerOverview from 'components/dashboard/ManagerOverview';
 import gtm from '../../lib/gtm';
@@ -7,14 +6,11 @@ import { GTM_EVENTS } from '../../constants';
 import { UserRole } from 'types/user';
 import { useAuth } from 'hooks';
 import { useEffect } from 'react';
-import { useGetUserById, useGetUserOnboardById } from 'api';
 
 const Overview: FC = () => {
   const {
-    user: { role: currentUserRole, id: currentUserId },
+    user: { role: currentUserRole },
   } = useAuth();
-  const { data: userData } = useGetUserById(currentUserId);
-  const { data: userOnboard } = useGetUserOnboardById(userData?.onboard?.id);
 
   useEffect(() => {
     gtm.push({ event: GTM_EVENTS.PAGE_VIEW, pageTitle: 'Overview' });
@@ -23,11 +19,8 @@ const Overview: FC = () => {
   const renderOverviewContent = (role: UserRole): JSX.Element => {
     let component: JSX.Element;
     switch (role) {
-      case 'INVESTOR':
-        component = <InvestmentCampaignsPage />;
-        break;
-      case 'ISSUER':
-        component = <IssuerOverview status={userOnboard.status} />;
+      case 'USER':
+        component = <IssuerOverview/>;
         break;
       case 'ACCOUNT_MANAGER':
       case 'ADMIN':

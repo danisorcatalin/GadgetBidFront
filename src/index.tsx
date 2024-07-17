@@ -7,25 +7,17 @@ import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider as ReduxProvider } from 'react-redux';
 import { SnackbarProvider } from 'notistack';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import StyledEngineProvider from '@mui/material/StyledEngineProvider';
 import App from './App';
 import { AuthProvider } from './contexts/JWTContext';
 import { EventsProvider } from './contexts/EventsContext';
 import { SettingsProvider } from './contexts/SettingsContext';
 import reportWebVitals from './reportWebVitals';
-import * as Sentry from '@sentry/react';
-import { Integrations } from '@sentry/tracing';
 import * as serviceWorker from './serviceWorker';
 import store from './store';
 import './index.css';
-
-Sentry.init({
-  dsn: 'https://35773ed46e5546f985ffb7946007d946@o1065778.ingest.sentry.io/6057905',
-  integrations: [new Integrations.BrowserTracing()],
-  tracesSampleRate: 1.0,
-});
 
 ReactDOM.render(
   <StrictMode>

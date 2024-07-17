@@ -39,7 +39,7 @@ const PasswordReset: FC = () => {
               justifyContent: 'center',
             }}
           >
-            <RouterLink to="/">
+            <RouterLink to="dashboard">
               <Logo
                 sx={{
                   height: 50,

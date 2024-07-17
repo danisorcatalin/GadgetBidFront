@@ -49,12 +49,12 @@ const StyledSlider = styled(Slider)`
     height: 10px;
   }
   .slick-dots li.slick-active button:before {
-    color: #3769ff;
+    color: #96B7DB;
     opacity: 1;
   }
   .slick-dots li button:before {
     color: #ffffff;
-    border: 1px solid #3769ff;
+    border: 1px solid #96B7DB;
     border-radius: 50%;
     height: 10px;
     width: 10px;

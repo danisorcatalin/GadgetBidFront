@@ -65,7 +65,7 @@ const ServerError: FC = () => {
               mt: 6,
             }}
           >
-            <Button color="primary" component={RouterLink} to="/" variant="outlined">
+            <Button color="primary" component={RouterLink} to="login" variant="outlined">
               {t('pages.backToHome')}
             </Button>
           </Box>

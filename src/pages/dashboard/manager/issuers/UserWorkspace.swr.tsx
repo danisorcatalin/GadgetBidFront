@@ -129,7 +129,7 @@ const IssuersWorkspace: FC = () => {
         showSortBy
         showPagination
         header={header}
-        rows={rows.filter((d) => d.role === 'ISSUER')}
+        rows={rows.filter((d) => d.role === 'USER')}
         rowCells={rowCells}
       />
     </Box>

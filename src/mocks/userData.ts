@@ -11,7 +11,7 @@ export const userDataMock: Partial<UserOutputSingleDto> = {
   country: null,
   dateOfBirth: null,
   active: true,
-  role: 'INVESTOR',
+  role: 'USER',
   onboard: {
     id: 1,
     files: [],

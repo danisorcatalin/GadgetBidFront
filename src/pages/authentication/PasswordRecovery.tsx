@@ -28,7 +28,7 @@ const PasswordRecovery: FC = () => {
             justifyContent: 'flex-start',
           }}
         >
-          <RouterLink to="/">
+          <RouterLink to="dashboard">
             <Logo
               sx={{
                 height: 50,
@@ -57,7 +57,7 @@ const PasswordRecovery: FC = () => {
                 sx={{
                   display: 'flex',
                   flexDirection: 'column',
-                  backgroundColor: '#EBF0FF',
+                  backgroundColor: '#F4F6FF',
                   p: 0,
                 }}
               >

@@ -158,10 +158,6 @@ export const NewsFeedCard: FC<NewsFeedCardProps> = (props) => {
                 </Box>
               )}
             </Box>
-          ) : user.role !== 'INVESTOR' ? (
-            <Button style={{ color: getStatusColor(status) }} size="medium" variant="outlined">
-              {status}
-            </Button>
           ) : null}
         </Box>
       </Card>

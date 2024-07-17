@@ -2,7 +2,7 @@ import { GadgetClientJava } from '../lib/axios';
 
 export const downloadAvatarFile = async (memberId: number): Promise<unknown> => {
   try {
-    const client = await GadgetClientJava.getClient();
+    const client = GadgetClientJava.getClient();
     const response = await client.campaignControllerDownloadCampaignMemberAvatar(
       { memberId },
       null,

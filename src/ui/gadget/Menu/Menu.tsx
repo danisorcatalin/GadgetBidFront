@@ -16,7 +16,7 @@ const styles = {
     p: '0 8px',
     backgroundColor: '#fff',
     height: '50px',
-    borderBottom: '0.6px solid #3769FF',
+    borderBottom: '0.6px solid #96B7DB',
   },
   logo: {},
   navigation: {

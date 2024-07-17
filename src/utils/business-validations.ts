@@ -56,7 +56,7 @@ export class BusinessValidations {
   }
 
   isIssuerApplicationApproved(): boolean {
-    return this.user.onboard.status === 'KYC_KYB_AML_OK';
+    return this.user.verified;
   }
 
   userHasCampaignStarted(): boolean {

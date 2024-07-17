@@ -20,7 +20,7 @@ import {
 } from 'api';
 import { withErrorSuspense } from 'utils/withErrorSuspense';
 
-import { FC, useCallback, useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 
 import { IssuerStatusActionBar } from 'components/dashboard/shared/issuer-profile/IssuerStatusActionBar';
 
@@ -36,7 +36,6 @@ import {
 } from 'snacks';
 import gtm from '../../../../lib/gtm';
 import { GTM_EVENTS } from '../../../../constants';
-import { IIssuerProfileContext, IssuerProfileContext } from 'hooks/contexts';
 import { IssuerContactDetailsFormInputs } from 'components/dashboard/shared/issuer-profile/company-details-tabs/issuer-contact-tab/issuer-contact-details-form/IssuerContactDetailsForm';
 import { LegalRepresentativesInputValues } from 'components/dashboard/shared/issuer-profile/company-details-tabs/legal-representatives-tab/legal-representatives-dynamic-form';
 import { ShareholdersInputValues } from 'components/dashboard/shared/issuer-profile/company-details-tabs/shareholders-tab/shareholders-dynamic-form/ShareholdersDynamicForm';
@@ -249,30 +248,6 @@ const IssuerProfileWorkspace: FC = () => {
     onShareholderRemoveRef.current = onShareholderRemove;
   }, [userData, userOnboardFiles]);
 
-  const IssuerProfileProvider: FC = useCallback(({ children }) => {
-    const handlers: IIssuerProfileContext = {
-      onIssuerDetailsSubmit: () => onIssuerDetailsSubmitRef.current,
-      uploadOnboardingDocument: () => uploadOnboardingDocumentRef.current,
-      discardOnboardingDocument: () => discardOnboardDocumentRef.current,
-      uploadCompanyDocument: () => uploadCompanyDocumentRef.current,
-      discardCompanyDocument: () => discardCompanyDocumentRef.current,
-      onCompanyDetailsSubmit: () => onCompanyDetailsSubmitRef.current,
-      onLegalRepresentativeSubmit: () => onLegalRepresentativeSubmitRef.current,
-      onLegalRepresentativeRemove: () => onLegalRepresentativeRemoveRef.current,
-      onShareholderSubmit: () => onShareholderSubmitRef.current,
-      onShareholderRemove: () => onShareholderRemoveRef.current,
-    };
-    return (
-      <IssuerProfileContext.Provider
-        value={{
-          ...handlers,
-        }}
-      >
-        {children}
-      </IssuerProfileContext.Provider>
-    );
-  }, []);
-
   return (
     <div>
       <IssuerStatusActionBar
@@ -280,14 +255,12 @@ const IssuerProfileWorkspace: FC = () => {
         currentStatus={status}
         onStatusChange={changeUserStatus}
       />
-      <IssuerProfileProvider>
         <IssuerProfile
           onboardData={onboard}
           companyData={companyData}
           userData={userData}
           userOnboardFiles={userOnboardFiles}
         />
-      </IssuerProfileProvider>
     </div>
   );
 };

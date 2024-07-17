@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import type { ChangeEvent } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import {
@@ -370,7 +370,7 @@ export const Table = <T extends keyable>(props: TableProps<T>): JSX.Element => {
             {mobileDevice ? (
               <DownloadIcon
                 sx={{
-                  color: rowData['filePath'] ? '#3769ff' : '#E3E5E6',
+                  color: rowData['filePath'] ? '#96B7DB' : '#E3E5E6',
                   pointerEvents: !readonly && rowData['filePath'] ? 'auto' : 'none',
                 }}
                 onClick={() => handleFileDownload(rowData)}
@@ -400,7 +400,7 @@ export const Table = <T extends keyable>(props: TableProps<T>): JSX.Element => {
             {mobileDevice ? (
               <UploadIcon
                 sx={{
-                  color: isReadOnly || readonly || rowData['filePath'] ? '#E3E5E6' : '#3769ff',
+                  color: isReadOnly || readonly || rowData['filePath'] ? '#E3E5E6' : '#96B7DB',
                   pointerEvents: isReadOnly || readonly || rowData['filePath'] ? 'none' : 'auto',
                 }}
                 onClick={() => handleFileUpload(rowData)}
@@ -431,7 +431,7 @@ export const Table = <T extends keyable>(props: TableProps<T>): JSX.Element => {
             {mobileDevice ? (
               <VisibilityIcon
                 sx={{
-                  color: rowData['filePath'] ? '#3769ff' : '#E3E5E6',
+                  color: rowData['filePath'] ? '#96B7DB' : '#E3E5E6',
                   pointerEvents: rowData['filePath'] ? 'auto' : 'none',
                 }}
                 onClick={() => handleFileView(rowData)}
@@ -462,7 +462,7 @@ export const Table = <T extends keyable>(props: TableProps<T>): JSX.Element => {
             {mobileDevice ? (
               <ClearIcon
                 sx={{
-                  color: rowData['filePath'] ? '#3769ff' : '#E3E5E6',
+                  color: rowData['filePath'] ? '#96B7DB' : '#E3E5E6',
                   pointerEvents: isReadOnly || readonly || !rowData['filePath'] ? 'none' : 'auto',
                 }}
                 onClick={() => handleFileDiscard(rowData)}
@@ -504,14 +504,14 @@ export const Table = <T extends keyable>(props: TableProps<T>): JSX.Element => {
       case RowCellType.TEXT:
         cellComponent = (
           <TableCell key={key} {...propsObj}>
-            {cellValue}
+            {typeof cellValue === 'function' ? React.createElement(cellValue) : cellValue}
           </TableCell>
         );
         break;
       case RowCellType.INVESTMENT_TEXT:
         cellComponent = (
           <TableCell sx={{ fontSize: '11px', color: '#000000 !important' }} key={key} {...propsObj}>
-            {cellValue}
+            {typeof cellValue === 'function' ? React.createElement(cellValue) : cellValue}
           </TableCell>
         );
         break;

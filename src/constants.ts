@@ -7,13 +7,7 @@ export const THEMES = {
 export const SiteName = 'GadgetBid';
 
 export enum ApiUrl {
-  local = 'http://localhost:3000',
-  development = 'https://api-dev.platform.gadgetbid.com',
-  staging = 'https://api-staging.platform.gadgetbid.com/',
-  production = 'https://api.platform.gadgetbid.com/',
-}
-export enum ApiUrlJava {
-  local = 'http://localhost:3000',
+  local = 'http://localhost:8080',
   development = 'https://app-dev.platform.gadgetbid.com/api/',
   staging = 'https://app-staging.platform.gadgetbid.com/api/',
   production = 'https://app.platform.gadgetbid.com/api/',

@@ -1,5 +1,5 @@
 import { OpenAPIClientAxios, Document } from 'openapi-client-axios';
-import { apiUrlJava } from 'utils/getApiUrlByEnv';
+import { apiUrl } from 'utils/getApiUrlByEnv';
 import { Client as GadgetJavaApi } from './GadgetClientJava';
 import swaggerJavaDefinition from './swagger-java.json';
 
@@ -13,7 +13,7 @@ class AxiosClientJava {
     this.api = new OpenAPIClientAxios({
       definition: typedDefinitionJava,
       withServer: {
-        url: apiUrlJava,
+        url: apiUrl,
       },
     });
   }

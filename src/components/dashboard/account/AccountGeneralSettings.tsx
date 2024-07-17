@@ -173,7 +173,7 @@ const AccountGeneralSettings: FC = (props) => {
                   </Grid>
                   {errors.submit && (
                     <Box sx={{ mt: 3 }}>
-                      <FormHelperText error>{errors.submit}</FormHelperText>
+                      <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
                     </Box>
                   )}
                 </CardContent>

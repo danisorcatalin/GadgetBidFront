@@ -22,6 +22,7 @@ const LanguagePopover: FC = () => {
 
   if (currentLanguage === 'en') {
     currentLanguage = 'English';
+    currentFlag = '/static/united-kingdom.svg';
   }
 
   if (currentLanguage === 'ro') {

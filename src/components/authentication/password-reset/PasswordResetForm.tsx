@@ -132,7 +132,7 @@ const PasswordResetForm: FC = () => {
           />
           {errors.submit && (
             <Box sx={{ mt: 3 }}>
-              <FormHelperText error>{errors.submit}</FormHelperText>
+              <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
             </Box>
           )}
           <Box sx={{ mt: 3 }}>

@@ -42,7 +42,7 @@ const getStyles = ({ hasDetails, hasLogo, responsive }) => ({
     },
   },
   details: {
-    backgroundColor: '#EBF0FF',
+    backgroundColor: '#F4F6FF',
     maxWidth: hasDetails ? '488px' : '320px',
     width: '100%',
     height: 'auto',
@@ -89,7 +89,7 @@ const getStyles = ({ hasDetails, hasLogo, responsive }) => ({
       ...responsive.carousel.card.footerText,
     },
     number: {
-      color: '#3769FF',
+      color: '#96B7DB',
       lineHeight: '24px',
       letterSpacing: '-0.44px',
       fontSize: '18px',
@@ -140,7 +140,7 @@ const getStyles = ({ hasDetails, hasLogo, responsive }) => ({
     justifyContent: 'space-between',
     marginBottom: '5px',
     info: {
-      color: '#3769FF',
+      color: '#96B7DB',
       lineHeight: '12px',
       letterSpacing: '-0.22px',
       fontSize: '11px',

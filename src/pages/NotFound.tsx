@@ -27,7 +27,7 @@ const NotFound: FC = () => {
             justifyContent: 'flex-start',
           }}
         >
-          <RouterLink to="/">
+          <RouterLink to="dashboard">
             <Logo
               sx={{
                 height: 50,
@@ -104,7 +104,7 @@ const NotFound: FC = () => {
                     fullWidth
                     variant="contained"
                     component={RouterLink}
-                    to="/"
+                    to="dashboard"
                   >
                     {t('pages.backToHome')}
                   </Button>

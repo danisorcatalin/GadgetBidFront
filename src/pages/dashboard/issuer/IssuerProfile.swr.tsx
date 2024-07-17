@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 import {
   addCompanyMember,
   deleteCompanyMember,
@@ -30,9 +30,7 @@ import {
   CompanyMemberDeleteFail,
 } from 'snacks';
 import gtm from '../../../lib/gtm';
-import { FC } from 'react';
 import { GTM_EVENTS } from '../../../constants';
-import { IIssuerProfileContext, IssuerProfileContext } from 'hooks/contexts';
 import { IssuerContactDetailsFormInputs } from 'components/dashboard/shared/issuer-profile/company-details-tabs/issuer-contact-tab/issuer-contact-details-form/IssuerContactDetailsForm';
 import { LegalRepresentativesInputValues } from 'components/dashboard/shared/issuer-profile/company-details-tabs/legal-representatives-tab/legal-representatives-dynamic-form';
 import { ShareholdersInputValues } from 'components/dashboard/shared/issuer-profile/company-details-tabs/shareholders-tab/shareholders-dynamic-form/ShareholdersDynamicForm';
@@ -231,39 +229,13 @@ const IssuerProfilePage = () => {
     onShareholderRemoveRef.current = onShareholderRemove;
   }, [userData]);
 
-  const IssuerProfileProvider: FC = useCallback(({ children }) => {
-    const handlers: IIssuerProfileContext = {
-      onIssuerDetailsSubmit: () => onIssuerDetailsSubmitRef.current,
-      uploadOnboardingDocument: () => uploadOnboardingDocumentRef.current,
-      discardOnboardingDocument: () => discardOnboardDocumentRef.current,
-      uploadCompanyDocument: () => uploadCompanyDocumentRef.current,
-      discardCompanyDocument: () => discardCompanyDocumentRef.current,
-      onCompanyDetailsSubmit: () => onCompanyDetailsSubmitRef.current,
-      onLegalRepresentativeSubmit: () => onLegalRepresentativeSubmitRef.current,
-      onLegalRepresentativeRemove: () => onLegalRepresentativeRemoveRef.current,
-      onShareholderSubmit: () => onShareholderSubmitRef.current,
-      onShareholderRemove: () => onShareholderRemoveRef.current,
-    };
-    return (
-      <IssuerProfileContext.Provider
-        value={{
-          ...handlers,
-        }}
-      >
-        {children}
-      </IssuerProfileContext.Provider>
-    );
-  }, []);
-
   return (
-    <IssuerProfileProvider>
       <IssuerProfile
         onboardData={onboardData}
         companyData={companyData}
         userData={userData}
         userOnboardFiles={userOnboardFiles}
       />
-    </IssuerProfileProvider>
   );
 };
 

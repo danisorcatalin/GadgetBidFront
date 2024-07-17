@@ -1,7 +1,7 @@
 import { GadgetClientJava } from '../lib/axios';
 import { Components } from '../lib/GadgetClientJava';
 
-export const uploadCampaignFile = async (
+export const uploadImages = async (
   campaignId: number,
   documentType: Components.Schemas.CampaignFileType,
   file: File

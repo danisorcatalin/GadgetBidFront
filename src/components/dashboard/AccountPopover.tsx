@@ -14,7 +14,7 @@ const styles = {
     width: 132,
     borderRadius: '0px 0px 4px 4px',
     padding: '8px',
-    backgroundColor: '#3769FF',
+    backgroundColor: '#96B7DB',
   },
   popoverText: {
     paddingTop: '2px',

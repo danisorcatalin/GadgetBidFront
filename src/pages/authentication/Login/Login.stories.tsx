@@ -1,7 +1,6 @@
 import { Story, ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Login from './Login';
-// import { mockCampaignRisksTabProps } from './CampaignRisksTab.mock';
 
 export default {
   title: 'NewUI/Login',

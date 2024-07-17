@@ -1,7 +1,6 @@
 import gtm from '../../../../lib/gtm';
-import { FC, useCallback, useRef } from 'react';
+import { FC, useRef } from 'react';
 import { GTM_EVENTS } from '../../../../constants';
-import { INewsFeedContext, NewsFeedContext } from 'hooks/contexts/useNewsFeedContext';
 import { NewsFeed } from 'components/dashboard/shared/news-feed';
 import { UpdateNewsFeedDto, UpdateNewsFeedPostVisibilityDto } from 'types/newsFeed';
 import { NewsFeedUpdateError, NewsFeedUpdateSuccess } from '../../../../snacks';
@@ -44,26 +43,8 @@ const NewsFeedWorkspace: FC = () => {
     updateNewsFeedVisibilityRef.current = updatePostVisibility;
   }, [newsFeedData]);
 
-  const NewsFeedProvider: FC = useCallback(({ children }) => {
-    const handlers: INewsFeedContext = {
-      updateNewsFeed: () => updateNewsFeedRef.current,
-      updateNewsFeedVisibility: () => updateNewsFeedVisibilityRef.current,
-    };
-    return (
-      <NewsFeedContext.Provider
-        value={{
-          ...handlers,
-        }}
-      >
-        {children}
-      </NewsFeedContext.Provider>
-    );
-  }, []);
-
   return (
-    <NewsFeedProvider>
       <NewsFeed newsFeedData={newsFeedData} />
-    </NewsFeedProvider>
   );
 };
 export default withErrorSuspense(NewsFeedWorkspace);

@@ -14,7 +14,7 @@ export const InfoButton = (props: Props): JSX.Element => {
       sx={{
         height: '36px',
         width: '36px',
-        border: '1px solid #3769FF',
+        border: '1px solid #96B7DB',
         borderRadius: '4px',
         cursor: 'pointer',
         display: 'flex',

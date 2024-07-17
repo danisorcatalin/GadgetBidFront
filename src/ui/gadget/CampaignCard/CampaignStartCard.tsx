@@ -49,7 +49,7 @@ const CampaignStartCard = (): JSX.Element => {
         <Spacer marginBottom="30px" />
         <Box sx={responsive.campaignStartCard.inputBox}>
           <GadgetInput
-            style={{ color: '#3769ff', border: '1px solid #3769ff' }}
+            style={{ color: '#96B7DB', border: '1px solid #96B7DB' }}
             disabled={true}
             name="email"
             value={supportEmail}

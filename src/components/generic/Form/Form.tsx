@@ -165,7 +165,7 @@ export const Form = <T extends { submit: unknown }>(props: Props<T>): JSX.Elemen
                           disableUnderline: true,
                           style: {
                             border: values[name]
-                              ? '1px solid #3769FF'
+                              ? '1px solid #96B7DB'
                               : touched[name] && errors[name]
                               ? '1px solid red'
                               : '1px solid #A2AAAD',
@@ -193,7 +193,7 @@ export const Form = <T extends { submit: unknown }>(props: Props<T>): JSX.Elemen
                             top: values[name] ? '6px' : '12px',
                             left: values[name] ? '0px' : '7px',
                             color: values[name]
-                              ? '#3769FF'
+                              ? '#96B7DB'
                               : touched[name] && errors[name]
                               ? '1px solid red'
                               : '#A2AAAD',
@@ -202,7 +202,7 @@ export const Form = <T extends { submit: unknown }>(props: Props<T>): JSX.Elemen
                         }}
                       >
                         {inputConfig.selectValues.map((value) => (
-                          <MenuItem key={value.key} value={value.key}>
+                          <MenuItem key={Number(value.key)} value={Number(value.key)}>
                             {value.value}
                           </MenuItem>
                         ))}
@@ -223,7 +223,7 @@ export const Form = <T extends { submit: unknown }>(props: Props<T>): JSX.Elemen
             </Grid>
             {errors.submit && (
               <Box sx={{ mt: 3 }}>
-                <FormHelperText error>{errors.submit}</FormHelperText>
+                <FormHelperText error>{JSON.stringify(errors.submit)}</FormHelperText>
               </Box>
             )}
             {formErrorText && (

@@ -253,28 +253,6 @@ export const getCampaignStatusColor = (status: CampaignStatus, theme: Theme): st
   return colors[status] || theme.palette.primary.main;
 };
 
-// export const getUserStatusColor = (
-//   userType: UserRole,
-//   status: UserOnboardStatus,
-//   theme: Theme
-// ): string => {
-//   let fn;
-//   let typedStatus;
-//   switch (userType) {
-//     case 'ISSUER':
-//       typedStatus = status as IssuerOnboardStatus;
-//       fn = getIssuerStatusColor(typedStatus, theme);
-//       break;
-//     case 'INVESTOR':
-//       typedStatus = status as InvestorOnboardStatus;
-//       fn = getInvestorStatusColor(status, theme);
-//       break;
-//     default:
-//       break;
-//   }
-//   return fn;
-// };
-
 const manualInvestmentStatusOrder: InvestmentStatus[] = [
   InvestorInvestmentStatusEnum.NEW,
   InvestorInvestmentStatusEnum.AGREEMENT_SENT,

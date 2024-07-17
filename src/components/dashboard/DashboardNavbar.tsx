@@ -52,7 +52,7 @@ const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
         >
           <MenuIcon fontSize="small" />
         </IconButton>
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
               display: {

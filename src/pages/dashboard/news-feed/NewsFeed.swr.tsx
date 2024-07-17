@@ -1,7 +1,6 @@
 import gtm from '../../../lib/gtm';
-import { FC, useCallback, useRef, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import { GTM_EVENTS } from '../../../constants';
-import { INewsFeedContext, NewsFeedContext } from 'hooks/contexts/useNewsFeedContext';
 import { NewsFeed } from 'components/dashboard/shared/news-feed';
 import { NewsFeedCreateError, NewsFeedCreateSuccess } from 'snacks';
 import { createNewsFeed, discardNewsFeedFile, uploadNewsFeedFile, useGetNewsFeedList } from 'api';
@@ -64,32 +63,13 @@ const NewsFeedWorkspace: FC = () => {
     discardNewsFeedDocumentRef.current = discardNewsFeedDocument;
   }, [newsFeedData]);
 
-  const NewsFeedProvider: FC = useCallback(({ children }) => {
-    const handlers: INewsFeedContext = {
-      createNewsFeed: () => createNewsFeedRef.current,
-      uploadNewsFeedFile: () => uploadNewsFeedDocumentRef.current,
-      discardNewsFeedFile: () => discardNewsFeedDocumentRef.current,
-    };
-    return (
-      <NewsFeedContext.Provider
-        value={{
-          ...handlers,
-        }}
-      >
-        {children}
-      </NewsFeedContext.Provider>
-    );
-  }, []);
-
   return (
-    <NewsFeedProvider>
       <NewsFeed
         uploadedFiles={uploadedFiles}
         newsFeedData={newsFeedData}
         uploadNewsFeedDocument={uploadNewsFeedDocument}
         discardNewsFeedDocument={discardNewsFeedDocument}
       />
-    </NewsFeedProvider>
   );
 };
 export default withErrorSuspense(NewsFeedWorkspace);

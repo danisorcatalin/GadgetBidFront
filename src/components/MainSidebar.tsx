@@ -42,7 +42,7 @@ const MainSidebar: FC<MainSidebarProps> = (props) => {
           p: 2,
         }}
       >
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
               height: 50,

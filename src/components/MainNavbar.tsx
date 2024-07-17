@@ -33,7 +33,7 @@ const MainNavbar: FC<MainNavbarProps> = (props) => {
         >
           <MenuIcon fontSize="small" />
         </IconButton>
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
               display: {

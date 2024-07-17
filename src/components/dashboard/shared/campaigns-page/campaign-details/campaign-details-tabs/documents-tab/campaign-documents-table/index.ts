@@ -1,1 +1,0 @@
-export { CampaignDocumentsTable } from './CampaignDocumentsTable';

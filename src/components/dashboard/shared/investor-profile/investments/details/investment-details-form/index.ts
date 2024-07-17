@@ -1,1 +1,0 @@
-export { InvestmentDetailsForm } from './InvestmentDetailsForm';

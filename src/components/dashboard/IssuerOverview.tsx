@@ -5,21 +5,9 @@ import { useAuth } from 'hooks';
 import { useGetUserById } from 'api';
 import { useTranslation } from 'react-i18next';
 import { BusinessValidations } from 'utils/business-validations';
-import { StatusStepper } from 'components/generic/StatusStepper';
-import { UserOnboardStatus } from 'types/user';
-import {
-  getIssuerStatusString,
-  issuerStepperStatusesFail,
-  issuerStepperStatusesSuccess,
-} from 'utils/status-stepper';
 import { responsive } from 'theme';
 
-interface Props {
-  status: UserOnboardStatus;
-}
-
-const IssuerOverview = (props: Props): JSX.Element => {
-  const { status } = props;
+const IssuerOverview = (): JSX.Element => {
   const { t } = useTranslation();
   const { user } = useAuth();
   const { data: userData } = useGetUserById(user.id);
@@ -29,19 +17,8 @@ const IssuerOverview = (props: Props): JSX.Element => {
     businessValidations.isIssuerApplicationApproved() &&
     businessValidations.userHasCampaignStarted();
 
-  const getIssuerStatuses = (status: UserOnboardStatus): string[] => {
-    if (status === 'REJECTED' || status === 'NOT_ELIGIBLE') {
-      return issuerStepperStatusesFail;
-    }
-    return issuerStepperStatusesSuccess;
-  };
-
   return (
     <>
-      <StatusStepper
-        steps={getIssuerStatuses(status)}
-        activeStep={getIssuerStatuses(status).indexOf(getIssuerStatusString(status))}
-      />
       <Box
         sx={{
           backgroundColor: 'background.paper',
@@ -99,7 +76,7 @@ const IssuerOverview = (props: Props): JSX.Element => {
             </Box>
           ) : null}
         </Box>
-        <Divider sx={{ color: '#3769FF' }} />
+        <Divider sx={{ color: '#96B7DB' }} />
         <Box
           sx={{
             width: '100%',
@@ -127,7 +104,7 @@ const IssuerOverview = (props: Props): JSX.Element => {
             </Box>
           ) : null}
         </Box>
-        <Divider sx={{ color: '#3769FF' }} />
+        <Divider sx={{ color: '#96B7DB' }} />
         <Box
           sx={{
             width: '100%',

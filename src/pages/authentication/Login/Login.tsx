@@ -40,7 +40,7 @@ const Login: FC = () => {
           justifyContent: 'flex-start',
         }}
       >
-        <RouterLink to="/">
+        <RouterLink to="dashboard">
           <Logo
             sx={{
               height: 50,
@@ -67,7 +67,7 @@ const Login: FC = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 p: 0,
-                backgroundColor: '#EBF0FF',
+                backgroundColor: '#F4F6FF',
               }}
             >
               <Box

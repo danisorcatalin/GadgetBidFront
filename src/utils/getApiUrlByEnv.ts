@@ -1,19 +1,19 @@
-import { ApiUrl, ApiUrlJava } from '../constants';
+import { ApiUrl } from '../constants';
 
-const getApiUrlByEnv = (): ApiUrl | ApiUrlJava => {
+const getApiUrlByEnv = (): ApiUrl => {
   const { REACT_APP_ENV } = process.env;
   switch (REACT_APP_ENV) {
     case 'local':
-      return ApiUrlJava.local;
+      return ApiUrl.local;
     case 'development':
-      return ApiUrlJava.development;
+      return ApiUrl.development;
     case 'staging':
-      return ApiUrlJava.staging;
+      return ApiUrl.staging;
     case 'production':
-      return ApiUrlJava.production;
+      return ApiUrl.production;
     default:
       return undefined;
   }
 };
 
-export const apiUrlJava = getApiUrlByEnv();
+export const apiUrl = getApiUrlByEnv();

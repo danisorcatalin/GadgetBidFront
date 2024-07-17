@@ -67,7 +67,7 @@ export const TextEditor: FC<TextEditorProps> = (props) => {
     <>
       <Box
         sx={{
-          border: '1px solid #3769ff',
+          border: '1px solid #96B7DB',
           borderRadius: '6px',
         }}
       >

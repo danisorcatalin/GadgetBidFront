@@ -5,7 +5,7 @@ export const TermsAndConditions: FC = () => {
   return (
     <Typography variant="body1">
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Termeni de Utilizare&nbsp;&nbsp;</strong>
@@ -229,7 +229,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Informații despre noi&nbsp;&nbsp;</strong>
@@ -253,7 +253,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Accesarea&nbsp; Platformei&nbsp;&nbsp;</strong>
@@ -300,7 +300,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Modificarea și &Icirc;ncetarea&nbsp;&nbsp;</strong>
@@ -353,7 +353,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Drepturi de proprietate intelectuală&nbsp;</strong>
@@ -497,7 +497,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Dependența de informațiile postate</strong>
@@ -532,7 +532,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Eligibilitatea pentru folosirea Serviciilor&nbsp;</strong>
@@ -604,7 +604,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>&Icirc;nregistrarea Profilului de Utilizator</strong>
@@ -766,7 +766,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Instrucțiuni privind conduita Utilizatorilor&nbsp;</strong>
@@ -887,7 +887,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Avertizori de risc</strong>
@@ -1101,7 +1101,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Politica pentru comentariile Investitorilor</strong>
@@ -1226,7 +1226,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Fără declarații și garanții</strong>
@@ -1371,7 +1371,7 @@ export const TermsAndConditions: FC = () => {
       <p style={{ textAlign: 'justify' }}>
         <span style={{ fontSize: '11pt' }}>
           <span>
-            <span style={{ color: '#3769ff' }}>
+            <span style={{ color: '#96B7DB' }}>
               <strong>
                 Informatii despre dumneavoastră și vizitele dumneavoastră pe Platformă
               </strong>
@@ -1395,7 +1395,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Viruși, hacking și alte infracțiuni</strong>
@@ -1582,7 +1582,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Conectarea la site si&nbsp;</strong>
@@ -1656,7 +1656,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Link-uri de pe site-ul nostru</strong>
@@ -1689,7 +1689,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Răspunderea noastră</strong>
@@ -1889,7 +1889,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Despăgubiri </strong>
@@ -1919,7 +1919,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Proceduri de notificare&nbsp;&nbsp;</strong>
@@ -1988,7 +1988,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Integralitate si separabilitate&nbsp;</strong>
@@ -2025,7 +2025,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Mesaje text</strong>
@@ -2064,7 +2064,7 @@ export const TermsAndConditions: FC = () => {
       </p>
 
       <p style={{ textAlign: 'justify' }}>
-        <span style={{ color: '#3769ff' }}>
+        <span style={{ color: '#96B7DB' }}>
           <span style={{ fontSize: '11pt' }}>
             <span>
               <strong>Jurisdicție și lege aplicabilă&nbsp;</strong>

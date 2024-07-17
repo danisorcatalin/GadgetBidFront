@@ -15,8 +15,7 @@ interface Section {
 
 interface UserRoleItems {
   ADMIN: UserRoleMenuItems;
-  INVESTOR: UserRoleMenuItems;
-  ISSUER: UserRoleMenuItems;
+  USER: UserRoleMenuItems;
 }
 
 interface UserRoleMenuItems {
@@ -51,7 +50,7 @@ const items: UserRoleItems = {
       },
     ],
   },
-  INVESTOR: {
+  USER: {
     primary: {
       title: 'Overview',
       path: '/dashboard',
@@ -67,24 +66,7 @@ const items: UserRoleItems = {
         path: '/dashboard/investor-investments',
       },
     ],
-  },
-  ISSUER: {
-    primary: {
-      title: 'Overview',
-      path: '/dashboard',
-    },
-    infoText: 'Crowdfunding',
-    secondary: [
-      {
-        title: 'Company profile',
-        path: '/dashboard/company-profile',
-      },
-      {
-        title: 'Start a campaign',
-        path: '/dashboard/crowdfunding-campaign',
-      },
-    ],
-  },
+  }
 };
 
 export const getMenuItems = (userRole: UserRole): UserRoleMenuItems => items[userRole];
@@ -134,46 +116,25 @@ const sections: Section[] = [
   },
   {
     title: 'Crowdfunding',
-    visibility: ['ISSUER'],
+    visibility: ['USER'],
     items: [
       {
         title: 'Company profile',
         path: '/dashboard/company-profile',
-        visibility: ['ISSUER'],
+        visibility: ['USER'],
       },
       {
         title: 'Start a campaign',
         path: '/dashboard/crowdfunding-campaign',
-        visibility: ['ISSUER'],
+        visibility: ['USER'],
       },
       {
         title: 'News Feed',
         path: '/dashboard/news-feed',
-        visibility: ['ISSUER'],
+        visibility: ['USER'],
       },
     ],
-  },
-  {
-    title: 'Investing',
-    visibility: ['INVESTOR'],
-    items: [
-      {
-        title: 'My profile',
-        path: '/dashboard/investor-profile',
-        visibility: ['INVESTOR'],
-      },
-      {
-        title: 'My investments',
-        path: '/dashboard/investor-investments',
-        visibility: ['INVESTOR'],
-      },
-      {
-        title: 'News Feed',
-        path: '/dashboard/news-feed',
-        visibility: ['INVESTOR'],
-      },
-    ],
-  },
+  }
 ];
 
 export const getSections = (userRole: UserRole): Section[] => {

@@ -4,7 +4,7 @@ import { Spacer } from 'components/Spacer';
 
 import { FC } from 'react';
 import { NewsFeedCard } from './news-feed-card';
-import { NewsFeedFileType, NewsFeedStatusEnum } from 'types/newsFeed';
+import { NewsFeedFileType } from 'types/newsFeed';
 import { useAuth } from 'hooks';
 import { useTranslation } from 'react-i18next';
 import { DiscardDocument, UploadDocument } from 'types/document';
@@ -43,7 +43,7 @@ export const NewsFeed: FC<NewsFeedProps> = (props: NewsFeedProps) => {
   return (
     <Card sx={{ mt: 5, maxWidth: '1024px' }}>
       <CardContent sx={{ background: '#FFFFFF', maxWidth: '1024px' }}>
-        {user.role === 'ISSUER' ? (
+        {user.role === 'USER' ? (
           <NewsFeedUploadFile<NewsFeedFileType>
             uploadDocument={uploadNewsFeedDocument}
             discardDocument={discardNewsFeedDocument}
@@ -52,17 +52,14 @@ export const NewsFeed: FC<NewsFeedProps> = (props: NewsFeedProps) => {
             uploadedFiles={uploadedFiles}
           />
         ) : null}
-        {user.role === 'ISSUER' ? <Spacer marginTop="16px" marginBottom="16px" /> : null}
+
+        {user.role === 'USER' ? <Spacer marginTop="16px" marginBottom="16px" /> : null}
         {newsFeedData.length === 0 ? (
           <Typography color="textPrimary" variant="h6">
             {newsFeedData.length !== 0 ? <Spacer marginTop="16px" marginBottom="16px" /> : null}
             {t('newsFeed.notNewsFeed')}
           </Typography>
-        ) : user.role === 'INVESTOR' ? (
-          newsFeedData
-            .filter((data) => data.status === NewsFeedStatusEnum.ACCEPTED)
-            .map((data, index) => generateCard(data, index))
-        ) : user.role === 'ISSUER' ? (
+        ) : user.role === 'USER' ? (
           newsFeedData
             .filter((data) => data.user.id === user.id)
             .map((data, index) => generateCard(data, index))

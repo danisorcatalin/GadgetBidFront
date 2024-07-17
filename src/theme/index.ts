@@ -29,7 +29,7 @@ const baseOptions: ThemeOptions = {
         root: {
           borderRadius: '4px',
           ':hover fieldset.MuiOutlinedInput-notchedOutline': {
-            borderColor: '#3769FF',
+            borderColor: '#96B7DB',
           },
         },
       },
@@ -45,7 +45,7 @@ const baseOptions: ThemeOptions = {
       styleOverrides: {
         outlined: {
           backgroundColor: '#fff',
-          color: '#3769FF',
+          color: '#96B7DB',
           ':disabled': {
             backgroundColor: '#E3E5E6',
           },
@@ -67,7 +67,7 @@ const baseOptions: ThemeOptions = {
             boxShadow: '0px 8px #CCCCCC',
             transition: 'all 0.5s',
             transform: 'translateY(-8px)',
-            backgroundColor: '#3769FF',
+            backgroundColor: '#96B7DB',
           },
         },
       },
@@ -123,7 +123,7 @@ const baseOptions: ThemeOptions = {
           borderRadius: 4,
           overflow: 'hidden',
           backgroundColor: '#FFFFFF',
-          border: '0.6px solid #3769FF',
+          border: '0.6px solid #96B7DB',
         },
       },
     },
@@ -183,14 +183,14 @@ const baseOptions: ThemeOptions = {
     MuiCardContent: {
       styleOverrides: {
         root: {
-          background: '#EBF0FF',
+          background: '#F4F6FF',
         },
       },
     },
     MuiDivider: {
       styleOverrides: {
         root: {
-          borderColor: '#3769FF',
+          borderColor: '#96B7DB',
         },
       },
     },
@@ -231,8 +231,8 @@ const baseOptions: ThemeOptions = {
     MuiTab: {
       styleOverrides: {
         root: {
-          color: '#3769FF',
-          border: '0.6px solid #3769FF',
+          color: '#96B7DB',
+          border: '0.6px solid #96B7DB',
           borderRadius: '6px',
           fontSize: '16px',
           minHeight: '28px',
@@ -243,7 +243,7 @@ const baseOptions: ThemeOptions = {
           alignItems: 'start',
           textTransform: 'none',
           '&.Mui-selected': {
-            backgroundColor: '#3769FF',
+            backgroundColor: '#96B7DB',
             color: '#FFFFFF',
           },
           '& .MuiBadge-root': {
@@ -373,7 +373,7 @@ const themesOptions: Record<string, ThemeOptions> = {
       mode: 'light',
       primary: {
         contrastText: '#ffffff',
-        main: '#3769ff',
+        main: '#96B7DB',
       },
       success: {
         contrastText: '#ffffff',
@@ -426,7 +426,7 @@ export const createCustomTheme = (config: ThemeConfig = {}): Theme => {
 };
 
 export const inputColors = {
-  primaryColor: '#3769FF',
+  primaryColor: '#96B7DB',
   secondaryColor: '#A2AAAD',
   errorColor: '#F44336',
   whiteColor: '#FFFFFF',
@@ -436,16 +436,16 @@ export const inputColors = {
 
 export const colors = {
   font: {
-    blue: '#3769FF',
+    blue: '#96B7DB',
   },
   bg: {
     lightBlue1: '#D7E1FF',
-    lightBlue2: '#EBF0FF',
+    lightBlue2: '#F4F6FF',
   },
   label: {
     green: '#00E600',
     red: '#de1a1a',
-    blue: '#3769FF',
+    blue: '#96B7DB',
     yellow: '#ffd639',
   },
 };
@@ -505,7 +505,7 @@ export const responsive = {
       },
     },
     checkIcon: {
-      color: '#3769ff',
+      color: '#96B7DB',
       width: '69px',
       height: '69px',
       [theme.breakpoints.down('sm')]: {

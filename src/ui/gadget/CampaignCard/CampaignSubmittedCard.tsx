@@ -33,7 +33,7 @@ const CampaignSubmittedCard = (): JSX.Element => {
         </Typography>
         <Spacer marginBottom="40px" />
         <Typography
-          sx={{ color: '#3769ff', fontSize: '44px', fontWeight: 400, whiteSpace: 'pre' }}
+          sx={{ color: '#96B7DB', fontSize: '44px', fontWeight: 400, whiteSpace: 'pre' }}
           variant="h4"
         >
           {t('campaign.analyseCampaign')}
